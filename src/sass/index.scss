@@ -1,9 +1,10 @@
 @import './utils/nool';
 @import './utils/vars';
 @import './utils/visually-hidden';
+@import './components/container';
 @import './components/body';
-@import './components/header';
 @import './components/hero';
+@import './components/header';
 @import './components/products';
 @import './components/about';
 @import './components/advantages';
@@ -16,4 +17,3 @@
 @import './components/read-more-modal';
 @import './components/location-modal';
 @import './components/franchise-modal';
-@import './components/container';

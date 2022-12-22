@@ -19,3 +19,29 @@
 
 //!видалити після закінчення секції
 
+.header-nav {
+    display: flex;
+
+}
+
+.logo {}
+
+.menu-list {
+    display: flex;
+    gap: 28px;
+}
+
+.menu-list__item {}
+
+.menu-list__title {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: calc(20 / 16);
+
+    color: $color-white-bg;
+
+    &:focus,
+    &:hover {
+        color: $color-yellow;
+    }
+}
