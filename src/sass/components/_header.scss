@@ -19,12 +19,40 @@
 
 //!видалити після закінчення секції
 
+.header {
+    background-color: $color-green-bg;
+    height: 65px;
+}
+
 .header-nav {
     display: flex;
+    justify-content: space-between;
+    align-items: baseline;
 
 }
 
-.logo {}
+.logo {
+    display: block;
+    width: 40px;
+    height: 37px;
+
+
+    @media screen and (min-width: 768px) {
+        width: 48px;
+        height: 44px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 60px;
+        height: 65px;
+    }
+}
+
+.header-nav__img {
+    display: block;
+    width: 100%;
+    overflow: hidden;
+}
 
 .menu-list {
     display: flex;
@@ -34,6 +62,10 @@
 .menu-list__item {}
 
 .menu-list__title {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 13px;
+
     font-weight: 700;
     font-size: 16px;
     line-height: calc(20 / 16);
@@ -44,4 +76,29 @@
     &:hover {
         color: $color-yellow;
     }
+}
+
+.header-nav__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 12px 35px;
+    min-width: 152px;
+    height: 42px;
+
+    font-weight: 600;
+    line-height: calc(17 / 14);
+
+    border-radius: 10px;
+    color: $color-black;
+    background-color: $color-yellow;
+}
+
+.header-nav__icon {
+    fill: currentColor;
+    height: 12px;
+    width: 12px;
+
+    margin-left: 4px;
 }
