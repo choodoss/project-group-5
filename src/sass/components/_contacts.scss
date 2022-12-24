@@ -22,6 +22,7 @@
 .contacts {
     background-color: $color-green-bg;
 }
+
 .contacts__title {
     position: absolute;
     white-space: nowrap;
@@ -35,13 +36,56 @@
     margin: -1px;
 
 }
+
 .contacts__item {
     position: absolute;
     width: 280px;
     height: 412px;
     left: 20px;
+    right: 20px;
     top: 0px;
-    background: var($focus-color-txt);
+    background: $focus-color-txt;
     box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
     border-radius: 24px;
+}
+
+.contacts__representation {
+    position: absolute;
+    width: 80px;
+    height: 22px;
+    left: 32px;
+    top: 40px;
+    background: $color-yellow;
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 120%;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: $color-black;
+    padding: (4px 22px 4px 22px);
+}
+.contacts__location {
+    position: absolute;
+    width: 190px;
+    height: 70px;
+    left: 32px;
+    top: 82px;
+}
+.contacts__location--title {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 186%;
+    letter-spacing: 0.04em;
+    margin-bottom: 8px;    
+}
+.contacts__location--adress {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 183%;
+    letter-spacing: 0.04em;
+    color: #D6936D;
 }
