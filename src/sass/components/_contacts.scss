@@ -35,6 +35,9 @@
     clip-path: inset(50%);
     margin: -1px;
 }
+.contacts__list {
+    display: block;
+}
 .contacts__item {
     position: absolute;
     width: 280px;
@@ -45,6 +48,8 @@
     background: $focus-color-txt;
     box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
     border-radius: 24px;
+    margin-bottom: 16px;
+    gap: 16px;
 }
 .contacts__representation {
     position: absolute;
