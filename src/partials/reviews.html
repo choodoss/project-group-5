@@ -1,5 +1,35 @@
 <section class="reviews">
-    <div class="container">
-        
+  <div class="container">
+    <picture>
+      <source
+        srcset="
+          ./images/jpeg/reviews/reviews-img.webp   1x,
+          ./images/jpeg/reviews/reviews-img@2.webp 2x
+        "
+        type="image/webp"
+        width="85"
+      />
+      <source
+        srcset="
+          ./images/jpeg/reviews/reviews-img.jpg   1x,
+          ./images/jpeg/reviews/reviews-img@2.jpg 2x
+        "
+        type="image/jpeg"
+        width="85"
+      />
+      <img
+        class="reviews-img"
+        src="./images/jpeg/reviews/reviews-img.jpg"
+        alt="Photo of a girl visiting a cafe"
+      />
+    </picture>
+    <div class="comment-body">
+      <p class="comment-body__text">
+        I love visiting your cafe. You prepare the most delicious ice cream in
+        Los Angeles! In addition, you have beautiful serving, cozy atmosphere
+        and polite staff.
+      </p>
     </div>
+    <div class="comment-body__consumer-name">Emily, Los Angeles</div>
+  </div>
 </section>

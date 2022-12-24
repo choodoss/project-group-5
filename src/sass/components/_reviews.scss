@@ -19,3 +19,38 @@
 
 //!видалити після закінчення секції
 
+.reviews {
+  background-image: url();
+}
+
+.reviews-img {
+  margin-top: 80px;
+  margin-bottom: 32px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50%;
+}
+
+.comment-body {
+  display: flex;
+  text-align: center;
+  padding: 35px 39px;
+  border-radius: 10px;
+  background-color: $color-green-bg;
+}
+.comment-body__text {
+  font-size: 12px;
+  line-height: 31px;
+  color: $focus-color-txt;
+}
+.comment-body__consumer-name {
+  display: flex;
+  justify-content: center;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.comment-body__consumer-name {
+  margin-top: 32px;
+  margin-bottom: 12px;
+}
