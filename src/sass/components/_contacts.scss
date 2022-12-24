@@ -34,9 +34,7 @@
     clip: rect(0 0 0 0);
     clip-path: inset(50%);
     margin: -1px;
-
 }
-
 .contacts__item {
     position: absolute;
     width: 280px;
@@ -48,7 +46,6 @@
     box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
     border-radius: 24px;
 }
-
 .contacts__representation {
     position: absolute;
     width: 80px;
@@ -88,4 +85,40 @@
     line-height: 183%;
     letter-spacing: 0.04em;
     color: #D6936D;
+}
+.contacts__week {
+    position: absolute;
+    left: 32px;
+    top: 200px;
+}
+.contacts__mode {
+    margin-bottom: 8px;
+}
+.contacts__days {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 186%;    
+}
+.contacts__time {    
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 186%;
+    color: #ABABAB;
+}
+.contacts__contacts {
+    position: absolute;
+    width: 130px;
+    height: 44px;
+    left: 32px;
+    top: 344px;
+}
+.contacts__nav {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 160%;
+    color: $color-black;
+    padding-bottom: 6px;    
 }
