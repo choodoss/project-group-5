@@ -1,7 +1,88 @@
 <section class="hero">
     <div class="container">
         <include src="./partials/header.html"></include>
-        
+
+        <h1 class="hero-text">ice cream made with passion</h1>
+
+    <div class="button-hero">
+        <ul class="button">
+            <li class="btn-hero__products">
+            <button type="button" class="btn-text-prod">Products</button>
+        </li>
+            <li class="btn-hero__made">
+            <button type="button" class="btn-text-made" >How it’s made?</button>
+        </li>
+        </ul>
+    </div>
+    <div class="hero-instruction" >
+            <picture class="picture-many">
+                <source srcset="./images/hero/desk-many-1x.png ,
+                ./images/hero/desk-many-2x.png"
+                media="(min-width:1200px)">
+                <source srcset="./images/hero/tab-many-1x.png , 
+                ./images/hero/tab-many-2x.png"
+                media="(min-width: 768px)">
+                <img 
+                    src="./images/hero/desk-many-2x.png" alt="many ise-cream" width="225"
+                        >
+            </picture>
+        <div class="hero-description">
+        <h2 class="hero-instr-text">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et.
+        </h2>
+        <button type="button" class="btn-icon">
+            <svg class="hero-icon" width="40" height="16" >
+                <use href="./images/svg/icons.svg#icon-arrow"></use>
+            </svg>
+        </button >
+            </div>
+        </div>
+            <picture class="picture-points">
+                <source srcset="./images/hero/deck-points-1x.png ,
+                ./images/hero/deck-points-2x.png"
+                media="(min-width:1200px)">
+                <source srcset="./images/hero/tab-points-1x.png , 
+                ./images/hero/tab-points-2x.png"
+                media="(min-width: 768px)">
+                <source srcset="./images/hero/mob-points-1x.png , 
+                ./images/hero/mob-points-2x.png"
+                media="(max-width:767px)">
+                <img 
+                    src="./images/hero/mob-points-1x.png" alt="points" width="1200" height="382">
+            </picture>
+            
+            <picture class="picture-ise">
+                <source srcset="./images/hero/des-ice-1x.png ,
+                ./images/hero/des-ice-2x.png"
+                media="(min-width:1200px)">
+                <source srcset="./images/hero/tab-ice-1x.png , 
+                ./images/hero/tab-ice-2x.png"
+                media="(min-width:768px)">
+                <source srcset="./images/hero/mob-ice-1x.png , 
+                ./images/hero/mob-ice-2x.png"
+                media="(max-width:320px)">
+                <img 
+                    src="./images/hero/mob-ice-1x.png" alt="ise-cream" width="456" height="560"
+                        >
+            </picture>
+
+
+    <div class="hero-inf">
+        <ul class="hero-inform">
+            <li class="hero-cafe">
+                16
+                <p class="hero-cafe-text">cafes</p>
+            </li>
+            <li class="hero-food-trucks">
+                23
+                <p class="hero-cafe-text">food trucks</p>
+            </li>
+        </ul>
+    </div>
+    
+    
+
+
 
     </div>
 </section>

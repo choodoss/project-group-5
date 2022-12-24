@@ -19,3 +19,411 @@
 
 //!видалити після закінчення секції
 
+// @include mobile {
+        
+//     }
+//         @include tablet {
+            
+//         }
+//         @include desktop {
+//         }
+
+.hero{
+    position: relative;
+    background-color: $color-green-bg;
+    width: 100vw;
+    height: 462px;
+    
+    @include mobile {
+        width: 100%;
+        height: 502px;
+    }
+        @include tablet {
+            width: 100vw;
+            height: 415px;
+        }
+        @include desktop {
+        width: 1200px;
+        height: 664px;
+        }
+}
+
+
+.hero-text{
+    margin-top: 50px;
+    
+    width: 247px;
+    height: 97px;;
+
+    font-family: 'Seymour One';
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 33px; ;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+
+    color: $focus-color-txt;
+
+    @include mobile {
+        width: 247px;
+        height: 97px;
+        font-size: 26px;
+        line-height: 33px;   
+        
+    }
+        @include tablet {
+            margin-top: 14px;
+            
+            width: 247px;
+            height: 97px;
+        }
+        @include desktop {
+            margin-top: 27px;
+            margin-left: 34px;
+            width: 367px;
+            height: 144px;
+            font-size: 38px;
+            line-height: 48px;
+        }
+
+}
+.btn-hero{
+    display: flex;
+}
+.button{
+    display: inline-flex;
+}
+.btn-hero__products{
+    width: 108px;
+    height: 38px;
+
+    margin-top: 32px;
+    
+    
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #F8D24E;
+    border-radius: 10px;
+    cursor: pointer;
+    @include mobile {
+        
+    }
+        @include tablet {
+            margin-top: 24px;
+            // margin-left: 32px;
+        }
+        @include desktop {
+            margin-top: 46px;
+            margin-left: 16px;
+            width: 134px;
+            height: 42px;
+        }
+    
+    }
+.btn-text-prod{ 
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.2;
+    text-align: center;
+    align-items: center;
+
+    color:$color-black;
+    background-color:$color-green-bg ;
+    @include mobile {
+        
+    }
+        @include tablet {
+            
+        }
+        @include desktop {
+            font-size: 14px;
+            line-height: 1.2;
+        }
+}
+
+.btn-hero__made { 
+    display: flex;
+
+    width: 100px;
+    height: 24px;
+    margin-top: 39px;
+    margin-left: 12px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background-color: $color-green-bg ;
+    @include mobile {
+    }
+        @include tablet {
+            width: 114px;
+            height: 24px;
+            margin-top: 31px;
+            margin-left: 12px;
+        }
+        @include desktop {
+            margin-top: 46px;
+            margin-left: 12px;
+            width: 154px;
+            height: 40px;;
+        }
+}
+
+.btn-text-made{
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.2;
+    text-align: center;
+    text-decoration-line: underline;
+
+    background-color:$color-green-bg;
+    color:$color-yellow;
+    @include mobile {
+        
+    }
+        @include tablet {
+            
+        }
+        @include desktop {
+            font-size: 14px;
+            line-height: 1.2;
+        }
+}
+.hero-instruction{
+    display: flex;
+    display: inline-flex;
+}
+.hero-icon{
+    position: absolute;
+    display: none;
+    cursor: pointer;
+    width: 40px;
+    height: 16px;
+
+    width: 100%;
+    height: 16px;
+    box-sizing: border-box;
+    background-color:$color-green-bg ;
+    fill: $color-white-bg ;
+    @include mobile {
+        display: none;
+    }
+        @include tablet {
+            display: flex;
+            
+            width: 40px;
+            height: 16px;
+            margin-top: 0px;
+            margin-left: 32px;
+        } 
+        @include desktop {
+            display: flex;
+            width: 40px;
+            height: 16px;
+            margin-top: 34px;
+            margin-left: 16px;
+        }
+}
+.picture-ise{
+    
+    position: absolute;
+    width: 177px;
+    height: 217px;
+    left: 83px;
+    margin-top: 26px;
+    @include mobile {
+        width: 177px;
+        height: 217px;
+        left: 83px;
+        
+    }
+        @include tablet {
+        width: 268px;
+        height: 329px;
+        left: 408px;
+        top: -6px;
+        }
+        @include desktop {
+        width: 456px;
+        height: 560px;
+        top: -20px;
+        left: 652px;
+        }
+}
+.picture-points{
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    left: 0px;
+    top: 364px;
+    @include mobile {
+        width: 100%;
+        height: 50px;
+        left: 0px;
+        top: 402px;
+    }
+        @include tablet {
+        width: 768px;
+        height: 67.79px;
+        left: 0px;
+        top: 275.95px;
+        }
+        @include desktop {
+        width: 1200px;
+        height: 383.46px;
+        left: 6px;
+        top: 184px;
+        }
+}
+.hero-instr-text {
+    display: none;
+
+    font-weight: 400;
+    color:$focus-color-txt;
+    @include mobile {
+        display: none;
+    }
+        @include tablet {
+            display: flex;
+            width: 139px;
+            height: 85px; 
+
+            margin-top: 46px;
+            margin-left: 32px;;
+            font-size: 12px;
+            line-height: 140%
+        }
+        @include desktop {
+            display: flex;
+            width: 200px;
+            height: 80px;
+            
+            margin-top: 111px;
+            margin-left: 16px;
+            font-size: 14px;
+            line-height: 2.0;
+        }
+}
+
+
+.picture-many{
+    
+    display: none;
+    @include mobile {
+        display: none;
+    }
+        @include tablet {
+            margin-top: 22px;
+            // margin-left: 32px;
+            display: flex;
+            width: 152px;
+            height: 152px;
+            
+        }
+        @include desktop {
+            display: flex;
+            width: 225px;
+            height: 225px;
+            margin-top: 42px;
+            margin-left: 0px;
+        }
+}
+
+.hero-inform{
+    
+    display: none;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: flex-end;
+    // justify-content: flex-end;
+    @include mobile {
+        display: none;
+    }
+        @include tablet {
+            display: flex;
+        }
+        @include desktop {
+            display: flex;
+        }
+}
+.hero-cafe{
+    position: absolute;
+    top: 126px;
+    width: 52px;
+    height: 56px;
+
+    font-weight: 900;
+    font-size: 46px;
+    line-height: 1.2;
+
+    text-align: right;
+    color: $color-black;
+
+        @include tablet {
+            width: 32px;
+            height: 48px;
+            
+            top: 28px;
+            font-size: 28px;
+            line-height: 34px;
+        }
+        @include desktop {
+            top: 44px;
+            width: 52px;
+            height: 56px;
+
+            font-size: 46px;
+            line-height: 1.2;
+        }
+}
+.hero-food-trucks{
+    position: absolute;
+    top: 219px;
+    width: 79px;
+    height: 77px;
+    
+
+    font-weight: 900;
+    font-size: 46px;
+    line-height: 1.2;
+    text-align: right;
+    
+    color: $color-black;
+    @include tablet {
+            width: 46px;
+            height: 48px;
+            
+            top: 96px;
+            font-size: 28px;
+            line-height: 34px;
+        }
+        @include desktop {
+            top: 114px;
+            width: 79px;
+            height: 77px;
+
+            font-size: 46px;
+            line-height: 1.2;
+        }
+}
+
+.hero-cafe-text{
+    
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 1.2;
+    text-align: right;
+
+    color:$focus-color-txt;
+    @include tablet {
+
+    }
+    @include desktop {
+        font-size: 14px;
+    }
+}
+
+

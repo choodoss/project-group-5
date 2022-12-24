@@ -1,6 +1,7 @@
 @import './utils/nool';
 @import './utils/vars';
 @import './utils/visually-hidden';
+@import './utils/mixins';
 @import './components/container';
 @import './components/body';
 @import './components/hero';
@@ -17,3 +18,4 @@
 @import './components/read-more-modal';
 @import './components/location-modal';
 @import './components/franchise-modal';
+@import './utils/mixins';
