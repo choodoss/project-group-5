@@ -23,6 +23,7 @@
     background-color: $color-green-bg;
     margin: auto;
     padding: auto;
+    top: -353px;
 }
 
 .contacts__title {
@@ -39,16 +40,14 @@
 }
 .contacts__list {
     display: block;
-    margin: 0;
     padding: 0;
 }
 .contacts__item {
     position: relative;
-    width: 100%;
+    max-width: 480px;
     height: 412px;
     margin-left: auto;
     margin-right: auto;
-    top: 0px;
     background: $focus-color-txt;
     box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
     border-radius: 24px;
