@@ -74,7 +74,13 @@
 }
 
 .contacts__representation {
-    flex: 0 1 100%;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 
     background: $color-yellow;
     border-radius: 4px;
@@ -276,7 +282,7 @@
     color: $color-black;
     border: 2px solid $color-yellow;
     background-color: $color-green-bg;
-    transition: color 250ms cubic - bezier(0.4, 0, 0.2, 1), background-color 250ms cubic - bezier(0.4, 0, 0.2, 1);
+    transition: border-color 0.25s cubic-bezier(.4, 0, .2, 1), color 0.25s cubic-bezier(.4, 0, .2, 1);
 
     &:hover {
         color: $color-black;
