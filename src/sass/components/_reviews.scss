@@ -1,25 +1,5 @@
-// !для інформації:
-
-// body {
-//     font-family: 'Montserrat', sans-serif;
-//     font-weight: 400;
-//     font-size: 14px;
-//     color: $color-black;
-// }
-
-// $color-yellow: #F8D24E;
-// $color-black: #131313;
-// $color-green-bg: #84A178;
-// $color-white-bg: #FCFCFC;
-// $hover-focus-color: #0A8817;
-// $focus-color-txt: #FCFCFC;
-// $hover-color-txt: #0A8817;
-// $ffamily-seymour:'Seymour One', sans-serif;
-// $ffamily-montserrat:'Montserrat', sans-serif;
-
-//!видалити після закінчення секції
-
 .reviews {
+  overflow: hidden;
   display: flex;
   margin-left: auto;
   margin-right: auto;
@@ -68,6 +48,29 @@
   }
 }
 
+.gallery__container {
+  display: inline-block;
+  margin: 0 auto;
+  @media screen and (min-width: 480px) {
+    width: 280px;
+    height: 130px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 704px;
+    height: 327px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 1013px;
+    height: 422px;
+  }
+}
+
+.slider-img ul li button {
+  display: none;
+}
+
 .reviews__thumb {
   outline: none;
 }
@@ -81,9 +84,10 @@
 }
 
 .comment-body {
-  margin: auto;
   display: flex;
-  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
   padding: 35px 39px;
   border-radius: 10px;
   background-color: $color-green-bg;
