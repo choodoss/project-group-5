@@ -1,27 +1,6 @@
-// !для інформації:
-
-// body {
-//     font-family: 'Montserrat', sans-serif;
-//     font-weight: 400;
-//     font-size: 14px;
-//     color: $color-black;
-// }
-
-// $color-yellow: #F8D24E;
-// $color-black: #131313;
-// $color-green-bg: #84A178;
-// $color-white-bg: #FCFCFC;
-// $hover-focus-color: #0A8817;
-// $focus-color-txt: #FCFCFC;
-// $hover-color-txt: #0A8817;
-// $ffamily-seymour:'Seymour One', sans-serif;
-// $ffamily-montserrat:'Montserrat', sans-serif;
-
-//!видалити після закінчення секції
-
 .reviews {
-  max-width: 1200px;
   display: flex;
+  max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
@@ -29,6 +8,24 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+
+.container {
+  @media screen and (min-width: 1200px) {
+    max-width: 1200px;
+  }
+
+  @media screen and (min-width: 768px) {
+    min-width: 768px;
+  }
+
+  @media screen and (min-width: 480px) {
+    min-width: 480px;
+  }
+
+  @media screen and (min-width: 300px) {
+    min-width: 300px;
+  }
 }
 
 @media screen and (min-width: 320px) {
@@ -79,6 +76,14 @@
   }
 }
 
+.controll__thumb {
+  position: relative;
+}
+
+.reviews__thumb {
+  outline: none;
+}
+
 .reviews-img {
   margin-top: 80px;
   margin-bottom: 32px;
@@ -88,18 +93,24 @@
 }
 
 .comment-body {
+  margin: auto;
+  display: flex;
+  justify-content: center;
   padding: 35px 39px;
   border-radius: 10px;
   background-color: $color-green-bg;
 
   @media screen and (min-width: 768px) {
+    max-width: 705px;
     padding: 28px 80px;
   }
 
   @media screen and (min-width: 1200px) {
+    max-width: 968px;
     padding: 42px 73px;
   }
 }
+
 .comment-body__text {
   font-size: 12px;
   line-height: 31px;
@@ -121,4 +132,32 @@
   font-size: 16px;
   margin-top: 32px;
   margin-bottom: 12px;
+}
+
+.slick-prev,
+.slick-next {
+  text-indent: -999px;
+  overflow: hidden;
+}
+
+.slick-dots {
+  list-style: none;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  gap: 18px;
+}
+
+.slick-dots li button {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #d9d9d9;
+  text-indent: -999px;
+  overflow: hidden;
+  outline: none;
+}
+
+.slick-dots li.slick-active button {
+  background: $color-green-bg;
 }
