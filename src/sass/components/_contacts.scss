@@ -20,13 +20,19 @@
 //!видалити після закінчення секції
 
 .contacts {
+    position: relative;
     background-color: $color-green-bg;
     margin: auto;
     padding: auto;
     top: -353px;
     @media screen and (min-width: 768px) {
         top: -299px;
-    }
+        
+         }
+    @media screen and (min-width: 1200px) {
+        top: -128px;
+            
+        }
    }
 
 .contacts__title {
@@ -316,7 +322,7 @@
     justify-content: center;
     align-items: center;
 
-    padding: 12px 40px;
+    padding: 10px 38px;
     width: 196px;
     height: 42px;
     bottom: 16px;
@@ -327,7 +333,7 @@
       
     font-weight: 600;
     font-size: 14px;
-    line-height: 1.29;
+    line-height: 1.286;
     
     border-radius: 10px;
     color: $color-black;
@@ -355,7 +361,7 @@
     justify-content: center;
     align-items: center;
 
-    padding: 12px 40px;
+    padding: 10px 38px;
     width: 196px;
     height: 42px;
     top: 20px;
@@ -365,7 +371,7 @@
        
     font-weight: 600;
     font-size: 14px;
-    line-height: 1.29;
+    line-height: 1.286;
     
     border-radius: 10px;
     color: $color-black;
