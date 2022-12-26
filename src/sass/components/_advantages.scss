@@ -85,14 +85,28 @@
     @media screen and (min-width: 768px) {
       display: flex;
       flex-wrap: nowrap;
+      justify-content: center;
+    align-items: center;
+      padding: 0;
       gap: 38px;
       text-align: left;
       margin-bottom: 80px;
+      
     }
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 1200px) {
+      gap: 110px;
       text-align: left;
-      gap: 109px;
+      padding: 0;
       margin-bottom: 146px;
+      
+    }
+  }
+  &.__description {
+    
+    @media screen and (min-width: 1200px) {
+      display: flex;
+    justify-content: center;
+    align-items: center;
     }
   }
   &__after-title {
@@ -192,16 +206,16 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding-bottom: 64px;
+    //padding-bottom: 64px;
     @media screen and (min-width: 768px) {
       display: flex;
       flex-wrap: nowrap;
       gap: 80px;      
-      padding-bottom: 204px;
+      //padding-bottom: 204px;
     }
     @media screen and (min-width: 1200px) {
       gap: 32px;
-      padding-bottom: 178px;
+      //padding-bottom: 178px;
     }
   }
   // &-list__item {
@@ -266,6 +280,13 @@
     background-color: #f8d24e;
     border-radius: 25px;
   }
+  &__progress {
+    margin-bottom: 64px;
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 174px;
+    }
+
+  }
 }
 .pic-list {
   display: flex;
@@ -273,6 +294,13 @@
 
 .adventages__thumb {
   position: relative;
+  min-width: 279px;
+  @media screen and (min-width: 768px) {
+      min-width: 330px;
+    }
+    @media screen and (min-width: 1200px) {
+      min-width: 490px;
+    }
 }
 
 .pic-list-bg__item {
@@ -290,6 +318,7 @@
   box-shadow: 0px 4.48583px 16.8218px rgba(153, 114, 23, 0.25);
   border-radius: 140px;
   @media screen and (min-width: 768px) {
+    margin: 0;
     width: 330px;
     background: linear-gradient(
         0deg,
@@ -301,6 +330,7 @@
     border-radius: 165px;
   }
   @media screen and (min-width: 1200px) {
+    margin: 0;
     width: 490px;
     background: linear-gradient(
         0deg,
