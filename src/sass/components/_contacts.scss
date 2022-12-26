@@ -67,12 +67,13 @@
         width: calc((100% - 32px)/3);
         margin-bottom: 40px;
         max-width: 244px;
+        height: 537px;
         
          }
     @media screen and (min-width: 1200px) {
         width: calc((100% - 64px)/3);
-        margin-bottom: 60px;
         max-width: 368px;
+        height: 542px;
             
         }
 }
@@ -110,16 +111,17 @@
     position: absolute;
     max-width: 216px;
     left: 32px;
-    right: 32px;
     top: 82px;
     
     @media screen and (min-width: 768px) {
         top: 102px;
         left: 24px;
         top: 102px;
+        max-width: 176px;
         }
     @media screen and (min-width: 1200px) {
         left: 40px;
+        max-width: 288px;
                 
         }
   
@@ -167,8 +169,6 @@
         } 
 
 
-
-letter-spacing: 0.04em;
 }
 .contacts__location--line {
     position: absolute;
@@ -181,28 +181,52 @@ letter-spacing: 0.04em;
 
     @media screen and (min-width: 768px) {
         width: 176px;
-        top: 243px;     
+        top: 243px;
+        left: 24px;       
     }
     @media screen and (min-width: 1200px) {
         width: 288px;
-        top: 222px;     
+        top: 222px;
+        left: 40px;       
     }
 }
 .contacts__week {
     position: absolute;
     left: 32px;
-    right: 32px;
     top: 200px;
+    @media screen and (min-width: 768px) {
+        top: 275px;
+        left: 24px;               
+        }
+    @media screen and (min-width: 1200px) {
+        left: 40px;                           
+        top: 254px;
+        } 
+
 }
 
 .contacts__mode {
     margin-bottom: 8px;
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 12px;
+        } 
 }
 .contacts__days {
     font-style: normal;
     font-weight: 500;
     font-size: 12px;
-    line-height: 186%;    
+    line-height: 186%;  
+
+    @media screen and (min-width: 768px) {
+        font-size: 14px;
+        
+        }
+    @media screen and (min-width: 1200px) {
+        font-size: 16px;
+                    
+        } 
+    
+    
 }
 .contacts__week--line {
     position: absolute;
@@ -216,11 +240,13 @@ letter-spacing: 0.04em;
     @media screen and (min-width: 768px) {
         width: 176px;
         top: 419px;
+        left: 24px;  
            
     }
     @media screen and (min-width: 1200px) {
         width: 288px; 
-        top: 418px;    
+        top: 418px;
+        left: 40px;      
     }
 }
 .contacts__time {    
@@ -229,14 +255,34 @@ letter-spacing: 0.04em;
     font-size: 12px;
     line-height: 186%;
     color: #ABABAB;
+    @media screen and (min-width: 768px) {
+        font-size: 14px;
+        
+        }
+    @media screen and (min-width: 1200px) {
+        font-size: 16px;
+                    
+        } 
 }
 .contacts__contacts {
     position: absolute;
     width: 130px;
     height: 44px;
     left: 32px;
-    right: 32px;
     top: 344px;
+    @media screen and (min-width: 768px) {
+        left: 24px;
+        top: 451px;
+        width: 151px;
+        
+        }
+    @media screen and (min-width: 1200px) {
+        left: 40px;
+        top: 450px;
+        width: 173px;
+                    
+        } 
+
 }
 .contacts__nav {
     font-style: normal;
@@ -244,7 +290,15 @@ letter-spacing: 0.04em;
     font-size: 12px;
     line-height: 160%;
     color: $color-black;
-    padding-bottom: 6px;    
+    padding-bottom: 6px;   
+    @media screen and (min-width: 768px) {
+        font-size: 14px;
+        line-height: 150%;
+        }
+    @media screen and (min-width: 1200px) {
+        font-size: 16px;
+                    
+        }  
 }
 .contacts__button { 
     display: block;
