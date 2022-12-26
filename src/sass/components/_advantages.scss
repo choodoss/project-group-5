@@ -1,25 +1,17 @@
-// !для інформації:
 
-// body {
-//     font-family: 'Montserrat', sans-serif;
-//     font-weight: 400;
-//     font-size: 14px;
-//     color: $color-black;
-// }
-
-// $color-yellow: #F8D24E;
-// $color-black: #131313;
-// $color-green-bg: #84A178;
-// $color-white-bg: #FCFCFC;
-// $hover-focus-color: #0A8817;
-// $focus-color-txt: #FCFCFC;
-// $hover-color-txt: #0A8817;
-// $ffamily-seymour:'Seymour One', sans-serif;
-// $ffamily-montserrat:'Montserrat', sans-serif;
-
-//!видалити після закінчення секції
-.advantages {
+.advantages { 
   background-color: #84a178;
+  
+  &__container {
+    padding-bottom: 64px;
+    @media screen and (min-width: 768px) {
+      padding-bottom: 204px;
+    }
+    @media screen and (min-width: 1200px) {
+      padding-bottom: 174px;
+    }
+  }
+
   &__pre-title {
     padding-top: 61px;
     font-family: 'Montserrat';
@@ -206,27 +198,16 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    //padding-bottom: 64px;
     @media screen and (min-width: 768px) {
       display: flex;
       flex-wrap: nowrap;
-      gap: 80px;      
-      //padding-bottom: 204px;
+      gap: 80px; 
     }
     @media screen and (min-width: 1200px) {
       gap: 32px;
-      //padding-bottom: 178px;
     }
   }
-  // &-list__item {
-  //   width: calc((100% - 22px) / 1);
-  //   @media screen and (min-width: 768px) {
-  //     width: calc((100% - 80px) / 3);
-  //   }
-  //   @media screen and (min-width: 1200px) {
-  //     width: calc((100% - 32px) / 3);
-  //   }
-  // }
+  
   &-list__box {
     margin-bottom: 16px;
   }
@@ -279,13 +260,6 @@
     padding: 7.5px 11px;
     background-color: #f8d24e;
     border-radius: 25px;
-  }
-  &__progress {
-    margin-bottom: 64px;
-    @media screen and (min-width: 1200px) {
-      margin-bottom: 174px;
-    }
-
   }
 }
 .pic-list {
