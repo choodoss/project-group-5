@@ -92,10 +92,11 @@
     letter-spacing: 0.04em;
     color: $color-black;
     padding: (4px 22px 4px 22px);
-    margin-bottom: 32px;
     @media screen and (min-width: 768px) {
         padding: (4px 13px 4px 13px);
         left: 24px;
+        font-size: 16px;
+        margin-bottom: 32px;
         
          }
     @media screen and (min-width: 1200px) {
@@ -127,7 +128,22 @@
     font-size: 12px;
     line-height: 186%;
     letter-spacing: 0.04em;
-    margin-bottom: 8px;    
+    font-size: 14px;
+    margin-bottom: 8px;
+    top: 82px;
+    @media screen and (min-width: 768px) {
+        left: 24px;
+        font-size: 14px;
+        line-height: 186%;
+        margin-bottom: 12px;
+        top: 0;
+             }
+    @media screen and (min-width: 1200px) {
+        left: 40px;
+        font-size: 16px;
+        line-height: 186%;
+        margin-bottom: 8px;
+            } 
 }
 .contacts__location--adress {
     font-style: normal;
@@ -136,6 +152,22 @@
     line-height: 183%;
     letter-spacing: 0.04em;
     color: #D6936D;
+    @media screen and (min-width: 768px) {
+        left: 24px;
+        font-size: 14px;
+        line-height: 183%;
+        
+         }
+    @media screen and (min-width: 1200px) {
+        left: 40px;
+        font-size: 16px;
+        line-height: 183%;
+            
+        } 
+
+
+
+letter-spacing: 0.04em;
 }
 .contacts__location--line {
     position: absolute;
