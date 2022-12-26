@@ -3,6 +3,9 @@
     background-color: $color-green-bg;
     height: 49px;
 
+    // видалити перед сдачею
+    padding-bottom: 450px;
+
     @media screen and (min-width: 768px) {
         height: 66px;
     }
@@ -99,6 +102,7 @@
 }
 
 .drop-menu {
+    z-index: 999;
     position: fixed;
     top: 49px;
     left: 0;
