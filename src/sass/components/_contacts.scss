@@ -1,6 +1,8 @@
 .contacts {
-    background-color: $color-green-bg;
     padding-bottom: 60px;
+    // margin-top: -353px;
+    // margin-top: -299px;
+    // margin-top: -128px;
 
     @media screen and (min-width: 768px) {
         padding-bottom: 40px;
@@ -91,7 +93,6 @@
 }
 
 .contacts__list {
-    margin-top: -353px;
     margin-bottom: 20px;
     padding: 0;
     display: flex;
@@ -101,7 +102,6 @@
     gap: 16px;
 
     @media screen and (min-width: 768px) {
-        margin-top: -299px;
         margin-bottom: 40px;
         flex-direction: row;
         flex-wrap: wrap;
@@ -109,7 +109,6 @@
     }
 
     @media screen and (min-width: 1200px) {
-        margin-top: -128px;
         margin-bottom: 60px;
         gap: 32px;
     }
