@@ -1,14 +1,15 @@
 .contacts {
+    position: relative;
+    padding-top: 959px;
     padding-bottom: 60px;
-    // margin-top: -353px;
-    // margin-top: -299px;
-    // margin-top: -128px;
 
     @media screen and (min-width: 768px) {
         padding-bottom: 40px;
+        padding-top: 278px;
     }
 
     @media screen and (min-width: 1200px) {
+        padding-top: 474px;
         padding-bottom: 120px;
     }
 }
@@ -18,10 +19,12 @@
     background: $focus-color-txt;
     box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
     border-radius: 24px;
+    margin: 0 20px;
 
     @media screen and (min-width: 768px) {
         width: calc((100% - 32px) / 3);
         padding: 40px 24px 24px;
+        margin: 0;
     }
 
     @media screen and (min-width: 1200px) {
@@ -93,8 +96,10 @@
 }
 
 .contacts__list {
-    margin-bottom: 20px;
-    padding: 0;
+    position: absolute;
+    top: -353px;
+    left: 50%;
+    transform: translateX(-50%);
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -102,15 +107,15 @@
     gap: 16px;
 
     @media screen and (min-width: 768px) {
-        margin-bottom: 40px;
         flex-direction: row;
         flex-wrap: wrap;
         gap: 16px;
+        top: -299px;
     }
 
     @media screen and (min-width: 1200px) {
-        margin-bottom: 60px;
         gap: 32px;
+        top: -128px;
     }
 }
 
@@ -118,8 +123,6 @@
     display: flex;
     flex-direction: column;
     gap: 8px;
-    border-bottom: 1px solid #E1E1E1;
-    padding-bottom: 24px;
 
     @media screen and (min-width: 768px) {
         max-width: 176px;
@@ -152,23 +155,14 @@
     }
 }
 
-.contacts__location--line {
-    width: 100%;
-    border: 1px solid #E1E1E1;
-}
-
 .contacts__week {
     display: flex;
     flex-direction: column;
     gap: 8px;
-    border-bottom: 1px solid #E1E1E1;
-    padding-bottom: 24px;
 }
-
-.contacts__mode {
-    @media screen and (min-width: 1200px) {
-        margin-bottom: 12px;
-    }
+.line {
+    width: 100%;
+    border-bottom: 1px solid #E1E1E1;
 }
 
 .contacts__days {
