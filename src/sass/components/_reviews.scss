@@ -1,6 +1,8 @@
 .reviews {
+  position: relative;
   margin-left: auto;
   margin-right: auto;
+  padding-top: 454px;
   padding-bottom: 393px;
   background-image: url(../images/jpeg/reviews/Backgroud_mobile.jpg);
   background-repeat: no-repeat;
@@ -8,9 +10,10 @@
   background-size: cover;
 
   @media screen and (min-width: 320px) {
+
     @media screen and (min-device-pixel-ratio: 2),
-      screen and (min-resolution: 192dpi),
-      screen and (min-resolution: 2dppx) {
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
       background-image: url(../images/jpeg/reviews/backgroud_mobile@2.jpg);
     }
   }
@@ -20,9 +23,10 @@
   }
 
   @media screen and (min-width: 480px) {
+
     @media screen and (min-device-pixel-ratio: 2),
-      screen and (min-resolution: 192dpi),
-      screen and (min-resolution: 2dppx) {
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
       background-image: url(../images/jpeg/reviews/background_tablet@2.jpg);
     }
   }
@@ -33,9 +37,10 @@
   }
 
   @media screen and (min-width: 768px) {
+
     @media screen and (min-device-pixel-ratio: 2),
-      screen and (min-resolution: 192dpi),
-      screen and (min-resolution: 2dppx) {
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
       background-image: url(../images/jpeg/reviews/backgroud_desktop@2.jpg);
     }
   }
@@ -46,24 +51,33 @@
 }
 
 .gallery__container {
-  margin-top: -32px;
+  position: absolute;
+  top: -32px;
+  left: 50%;
+  transform: translateX(-50%);
   margin: 0 auto;
+  border-radius: 18px;
+
   @media screen and (min-width: 480px) {
     width: 280px;
     height: 130px;
   }
 
   @media screen and (min-width: 768px) {
-    margin-top: -144px;
+    top: -144px;
     width: 704px;
     height: 327px;
   }
 
   @media screen and (min-width: 1200px) {
-    margin-top: -98px;
+    top: -98px;
     width: 1013px;
     height: 422px;
   }
+}
+
+.gallery-img {
+  border-radius: 18px;
 }
 
 .slider-img ul li button {
@@ -75,7 +89,6 @@
 }
 
 .reviews-img {
-  margin-top: 80px;
   margin-bottom: 32px;
   margin-left: auto;
   margin-right: auto;
