@@ -1,3 +1,67 @@
-<div class="buy-modal">
-    
-</div>
+<div class="backdrop is-hidde" data-modal>
+        <div class="buy-modal">
+            <button type="button" class="buy-close" data-modal-close>
+                <svg class="modal-close-icon" width="20px" height="20px">
+                    <use href="./images/svg/icons.svg#icon-close"></use>
+                </svg>
+            </button>
+            <p class="buy-title">Buy now</p>
+            <ul class="buy-list">
+                <li class="buy-item">
+                <input type="checkbox"
+                name="privacy" 
+                id="privacy"
+                 class="buy-check visually-hidde">
+                <label for="privacy" class="check-text">
+                    <p class="buy-info">ice cream</p>
+                </label>
+                    <!-- <li class="buy-item">
+                <input type="checkbox"
+                name="privacy" 
+                id="privacy"
+                 class="buy-check visually-hidde">
+                <label for="privacy" class="check-text">
+                    <p class="buy-info">ice coffee</p>
+                </label>
+                </li>
+                    <li class="buy-item">
+                <input type="checkbox"
+                name="privacy" 
+                id="privacy"
+                 class="buy-check visually-hidde">
+                <label for="privacy" class="check-text">
+                    <p class="buy-info">milkshake</p>
+                </label>
+                </li> -->
+            </ul>
+    <form class="buy-form">
+      <div class="buy-list">
+        <div class="buy-item">
+          <label for="name"></label>
+          <div class="buy-input">
+            <input type="text" name="name" id="name" placeholder="Name" />
+          </div>
+        </div>
+        <div class="buy-item">
+          <label for="tel"></label>
+          <div class="buy-input">
+            <input type="tel" name="tel" id="tel" placeholder="Phone" />
+          </div>
+        </div>
+        <div class="buy-item">
+          <label for="textarea"></label>
+          <textarea
+            name="coment"
+            id="textarea"
+            rows="2"
+            placeholder="Comment"
+          ></textarea>
+        </div>
+      </div>
+      <button class="buy-btn" type="submit">Submit</button>
+    </form>
+        </div>
+    </div>
+
+     
+  
