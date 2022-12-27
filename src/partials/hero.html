@@ -1,112 +1,67 @@
 <section class="hero">
-  <div class="container">
-    <h1 class="hero-text">ice cream made with passion</h1>
-    <div class="button-hero">
-      <ul class="button">
-        <li class="btn-hero__products">
-          <button type="button" class="btn-text-prod">Products</button>
-        </li>
-        <li class="btn-hero__made">
-          <button type="button" class="btn-text-made">How it’s made?</button>
-        </li>
-      </ul>
+    <div class="container">
+        <div class="hero__position">
+            <div class="hero__title">ice cream made with passion</div>
+            <div class="hero_buttons">
+                <button class="buttons__product" type="button">Products</button>
+                <button class="buttons__modal-open" type="button">How it’s made?</button>
+            </div>
+            <div class="example">
+                <picture>
+                    <source
+                        srcset="./images/hero/lots_ice-creame_1x_225w.webp 1x, ./images/hero/lots_ice-creame_1x_225w.webp 2x"
+                        type="image/webp" media="(min-width: 1200px)">
+                    <source
+                        srcset="./images/hero/lots_ice-creame_1x_225w.png 1x, ./images/hero/lots_ice-creame_1x_225w.png 2x"
+                        type="image/png" media="(min-width: 1200px)">
+                    <source
+                        srcset="./images/hero/lots_ice-creame_1x_152w.webp 1x, ./images/hero/lots_ice-creame_1x_152w.webp 2x"
+                        type="image/webp" media="(min-width: 768px)">
+                    <source
+                        srcset="./images/hero/lots_ice-creame_1x_152w.png 1x, ./images/hero/lots_ice-creame_1x_152w.png 2x"
+                        type="image/png" media="(min-width: 768px)">
+                    <img class="example__img" alt="lots of ice creams" src="./images/hero/lots_ice-creame_1x_152w.png"
+                        width="152" alt="lots of ice creams">
+                </picture>
+                <p class="description">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et
+                    <svg width="40" height="16" class="description__icon">
+                        <use href="./images/svg/icons.svg#icon-arrow"></use>
+                    </svg>
+                </p>
+            </div>
+            <div class="details">
+                <p class="cafes-number"><span class="decor">16</span><br> 
+                    cafes</p>
+                <p class="trucks"><span class="decor">23</span><br>
+                    food trucks</p>
+            </div>
+            <div class="hero__background-pictures">
+                <picture>
+                    <source srcset="./images/hero/dots_1x_1200w.webp 1x, ./images/hero/dots_2x_1200w.webp 2x" type="image/webp" media="(min-width: 1200px)">
+                    <source srcset="./images/hero/dots_1x_1200w.png 1x, ./images/hero/dots_2x_1200w.png 2x" type="image/png"
+                    media="(min-width: 1200px)">
+                    <source srcset="./images/hero/dots_1x_768w.webp 1x, ./images/hero/dots_2x_768w.webp 2x" type="image/webp" media="(min-width: 768px)">
+                    <source srcset="./images/hero/dots_1x_768w.png 1x, ./images/hero/dots_2x_768w.png 2x" type="image/png"
+                    media="(min-width: 768px)">
+                    <source srcset="./images/hero/dots_1x_320w.webp 1x, ./images/hero/dots_2x_320w.webp 2x" type="image/webp" media="(min-width: 768px)">
+                    <source srcset="./images/hero/dots_1x_320w.png 1x, ./images/hero/dots_2x_320w.png 2x" type="image/png"
+                        media="(max-width: 767px)">
+                    <img class="hero__dots" width="320" src="./images/hero/dots_1x_320w.png" alt="dots">
+                </picture>
+                <picture>
+                    <source srcset="./images/hero/ice_1x_1200w.webp 1x, ./images/hero/ice_2x_1200w.webp 2x"
+                        type="image/webp" media="(min-width: 1200px)">
+                    <source srcset="./images/hero/ice_1x_1200w.png 1x, ./images/hero/ice_2x_1200w.png 2x"
+                        type="image/png" media="(min-width: 1200px)">
+                    <source srcset="./images/hero/ice_1x_768w.webp 1x, ./images/hero/ice_2x_768w.webp 2x"
+                        type="image/webp" media="(min-width: 768px)">
+                    <source srcset="./images/hero/ice_1x_768w.png 1x, ./images/hero/ice_2x_768w.png 2x" type="image/png"
+                        media="(min-width: 768px)">
+                    <img class="hero__ice" width="177" src="./images/hero/ice_1x_480w.png" alt="ice-cream">
+                </picture>
+            </div>
+        </div>
     </div>
-    <div class="hero-instruction">
-      <picture class="picture-many">
-        <source
-          srcset="
-            ./images/hero/desk-many-1x.png 1x,
-            ./images/hero/desk-many-2x.png 2x
-          "
-          type="image/png"
-          media="(min-width:1200px)"
-        />
-        <source
-          srcset="
-            ./images/hero/tab-many-1x.png 1x,
-            ./images/hero/tab-many-2x.png 2x"
-            type="image/png"
-          media="(min-width: 768px)"
-        />
-        <img
-          src="./images/hero/tab-many-1x.png"
-          alt="many ise-cream"
-          width="225"
-        />
-      </picture>
-      <div class="hero-description">
-        <h2 class="hero-instr-text">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et.
-        </h2>
-        <button type="button" class="btn-icon">
-          <svg class="hero-icon" width="40" height="16">
-            <use href="./images/svg/icons.svg#icon-arrow"></use>
-          </svg>
-        </button>
-      </div>
-    </div>
-    <picture class="picture-points">
-      <source
-        srcset="
-        ./images/hero/deck-points-1x.png 1x, ./images/hero/deck-points-2x.png 2x"
-        type="image/png"
-        media="(min-width: 1200px)"
-      />
-      <source
-        srcset="
-        ./images/hero/tab-points-1x.png 1x, ./images/hero/tab-points-2x.png 2x"
-        type="image/png"
-        media="(min-width: 768px)"
-      />
-      <source
-        srcset="
-        ./images/hero/mob-points-1x.png 1x, ./images/hero/mob-points-2x.png 2x"
-        type="image/png"
-        media="(min-width:480px)"
-      />
-      <img
-        src="./images/hero/mob-points-1x.png"
-        alt="points"
-        width="1200"
-      />
-    </picture>
-
-    <picture class="picture-ise">
-      <source
-        srcset="./images/hero/des-ice-1x.png 1x, ./images/hero/des-ice-2x.png 2x"
-        type="image/png"
-        media="(max-width:1200px)"
-      />
-      <source
-        srcset="./images/hero/tab-ice-1x.png 1x, ./images/hero/tab-ice-2x.png 2x"
-        type="image/png"
-        media="(min-width:768px)"
-      />
-      <source
-        srcset="./images/hero/mob-ice-1x.png 1x, ./images/hero/mob-ice-2x.png 2x"
-        type="image/png"
-        media="(min-width:480px)"
-      />
-      <img
-        src="./images/hero/mob-ice-1x.png"
-        alt="ise-cream"
-        width="1200"
-        height="560"
-      />
-    </picture>
-
-    <div class="hero-inf">
-      <ul class="hero-inform">
-        <li class="hero-cafe">
-          16
-          <p class="hero-cafe-text">cafes</p>
-        </li>
-        <li class="hero-food-trucks">
-          23
-          <p class="hero-cafe-text">food trucks</p>
-        </li>
-      </ul>
-    </div>
-  </div>
 </section>
