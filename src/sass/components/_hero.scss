@@ -170,7 +170,7 @@
 .details {
     display: none;
 
-    @media screen and (min-width: 400px) {
+    @media screen and (min-width: 768px) {
         display: block;
         position: absolute;
         top: 14px;
@@ -179,14 +179,11 @@
 
     @media screen and (min-width: 1200px) {
         top: 8px;
-        right: 16px;
     }
 }
 
 .trucks,
 .cafes-number {
-    font-size: 14px;
-    line-height: calc(17 / 14);
     text-align: right;
     color: #FCFCFC;
 
@@ -198,6 +195,14 @@
     @media screen and (min-width: 1200px) {
         font-size: 14px;
         line-height: calc(17 / 14);
+    }
+}
+
+.cafes-number {
+    margin-bottom: 20px;
+
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 16px;
     }
 }
 
