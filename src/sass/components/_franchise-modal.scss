@@ -1,5 +1,4 @@
 .franchise-modal__container {
-  display: none;
   position: fixed;
   top: 0;
   left: 0;
@@ -8,7 +7,17 @@
 
   background: rgba(0, 0, 0, 0.2);
 
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 101;
+  overflow: auto;
+  transform: scaleX(1);
+
+  &.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+    transform: scaleX(0);
+}
+
 }
 .franchise-modal {
   position: relative;
