@@ -33,7 +33,7 @@
     line-height: calc(33 / 26);
     letter-spacing: 0.04em;
     text-transform: uppercase;
-
+    width: 247px;
     color: $color-white-bg;
 
     margin-bottom: 32px;
@@ -168,11 +168,11 @@
 .details {
     display: none;
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 400px) {
         display: block;
         position: absolute;
         top: 14px;
-        right: 32px;
+        right: 0px;
     }
 
     @media screen and (min-width: 1200px) {
@@ -183,10 +183,15 @@
 
 .trucks,
 .cafes-number {
-    font-size: 8px;
-    line-height: calc(10 / 8);
+    font-size: 14px;
+    line-height: calc(17 / 14);
     text-align: right;
     color: #FCFCFC;
+
+    @media screen and (min-width: 768px) {
+        font-size: 8px;
+        line-height: calc(10 / 8);
+    }
 
     @media screen and (min-width: 1200px) {
         font-size: 14px;

@@ -16,9 +16,10 @@
     opacity: 0;
     pointer-events: none;
     transform: scaleX(0);
-}
+  }
 
 }
+
 .franchise-modal {
   position: relative;
   display: flex;
@@ -39,7 +40,6 @@
   border-radius: 10px;
 
   overflow: hidden;
-  overflow-y: scroll;
 
   @media screen and (min-width: 768px) {
     padding: 29px 56px;
@@ -47,6 +47,7 @@
     max-height: 668px;
   }
 }
+
 .franchise-modal__button--close {
   position: absolute;
   top: 12px;
@@ -60,9 +61,10 @@
 
   &:hover,
   &:focus {
-    color: $hover-focus-color;
+    color: $color-yellow;
   }
 }
+
 .franchise-modal__title {
   margin-bottom: 20px;
   text-align: center;
@@ -78,6 +80,7 @@
     line-height: 1.4;
   }
 }
+
 .franchise-modal__text {
   margin-bottom: 24px;
   text-align: start;
@@ -89,6 +92,7 @@
     line-height: 1.37;
   }
 }
+
 .franchise-modal__form {
   display: flex;
   flex-direction: column;
@@ -96,6 +100,7 @@
   max-width: 368px;
   width: 100%;
 }
+
 .franchise-modal__list {
   display: flex;
   flex-direction: column;
@@ -109,9 +114,11 @@
     margin-bottom: 32px;
   }
 }
+
 .franchise-modal__item {
   width: 100%;
 }
+
 .franchise-modal input,
 textarea {
   width: 100%;
@@ -133,6 +140,7 @@ textarea {
     width: 368px;
   }
 }
+
 .franchise-modal textarea {
   height: 64px;
 
@@ -140,6 +148,7 @@ textarea {
     height: 84px;
   }
 }
+
 .franchise-modal__button {
   padding: 12px 34px;
   font-weight: 600;
@@ -154,6 +163,7 @@ textarea {
   &:focus {
     background-color: $hover-focus-color;
   }
+
   &:focus {
     color: $focus-color-txt;
   }

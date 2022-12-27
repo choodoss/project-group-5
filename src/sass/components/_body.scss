@@ -5,8 +5,8 @@ body {
     font-weight: 400;
     font-size: 14px;
     color: $color-black;
+}
 
-    &.modal-open {
-        overflow: hidden;
-    }
+.no-scroll {
+    overflow: hidden;
 }

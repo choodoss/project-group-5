@@ -3,6 +3,7 @@
         openFranchiseModalBtn: document.querySelector("[data-franchise-modal-open]"),
         closeFranchiseModalBtn: document.querySelector("[data-franchise-modal-close]"),
         franchiseModal: document.querySelector("[data-franchise-modal]"),
+        body: document.querySelector("body"),
 
     };
 
@@ -10,12 +11,7 @@
     refs.closeFranchiseModalBtn.addEventListener("click", toggleModal);
 
     function toggleModal() {
-        document.body.classList.toggle("franchise-modal-open");
         refs.franchiseModal.classList.toggle("is-hidden");
-    }
-    window.onclick = function (event) {
-        if (event.target == franchiseModal) {
-            franchiseModal.style.display = "none";
-        }
+        refs.body.classList.toggle("no-scroll");
     }
 })();
