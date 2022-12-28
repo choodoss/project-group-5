@@ -329,6 +329,17 @@
 }
 
 .products__btn {
+  outline: none;
   background-color: transparent;
   display: block;
+  color: $color-black;
+
+  &:hover,
+  &:focus {
+    color: $focus-color-txt;
+  }
+}
+
+.products__card-open {
+  fill: currentColor;
 }

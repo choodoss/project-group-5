@@ -97,7 +97,7 @@
 }
 
 .drop-menu {
-    z-index: 999;
+    z-index: 900;
     position: fixed;
     top: 49px;
     left: 0;
@@ -242,7 +242,7 @@
     margin: 0 auto;
 
     @media screen and (max-width: 767px) {
-        display: flex;
+        display: none;
     }
 }
 
