@@ -1,31 +1,25 @@
-<div class="backdrop is-hidde">
+<div class="backdrop">
   <div class="consist-modal">
-    <button
-      class="consist-close"
-      type="button" data-modal-close>
+    <button class="consist-close" type="button" data-modal-close>
       <svg width="20" height="20">
         <use href="./images/svg/icons.svg#icon-close"></use>
       </svg>
     </button>
     <p class="consist-title">
-    Chololate icecream
+      Chololate icecream
     </p>
     <div class="img-elipse">
-        <picture class="consist-img">
-            <source
-            srcset="./images/ingredients/choco-ice.png 1x,
-            ./images/ingredients/choco-ice2x.png 2x,
-            ./images/ingredients/choco-ice.webp 1x,
-            ./images/ingredients/choco-ice2x.webp 2x"
-                media="(min-width:132px)"
-            />
-             <img src="./images/ingredients/choco-ice.png" 
-             alt="choco-ice"
-             width="132"> 
-        </picture> 
+      <picture class="consist-img">
+        <source srcset="./images/consist/chololate_icecream_1x.webp 1x, ./images/consist/chololate_icecream_2x.webp 2x"
+          type="image/webp" media="(min-width: 768px)">
+        <source srcset="./images/consist/chololate_icecream_1x.jpg 1x, ./images/consist/chololate_icecream_2x.jpg 2x"
+          type="image/jpg" media="(min-width: 768px)">
+        <img class="example__img" alt="lots of ice creams" src="./images/consist/chololate_icecream_1x.jpg"
+          alt="choco-ice" width="132" height="132">
+      </picture>
     </div>
-    <!-- <div class="consist-wrap">
-        <ul class="consist-wrap-list">
+    <div class="consist-wrap">
+      <!-- <ul class="consist-wrap-list">
         <li class="wrap-list">
          <p class="wrap-text">320</p>
           <p class="wrap-text-item">kcal</p>
@@ -45,34 +39,34 @@
         </ul> -->
     </div>
     <p class="consist-menu">Ingredients</p>
-   <div class="consist-menu-item">
-        <ul class="consist-menu-list">
+    <div class="consist-menu-item">
+      <ul class="consist-menu-list">
         <li class="menu-price">
-            <p class="menu-text">Milk</p>
-            <p class="menu-text">100ml</p>
+          <p class="menu-text">Milk</p>
+          <p class="menu-text">100ml</p>
         </li>
-         <li class="menu-price">
-            <p class="menu-text">Belgian chocolate</p>
-            <p class="menu-text">20g</p>
+        <li class="menu-price">
+          <p class="menu-text">Belgian chocolate</p>
+          <p class="menu-text">20g</p>
         </li>
-         <li class="menu-price">
-            <p class="menu-text">Cream</p>
-            <p class="menu-text">150ml</p>
+        <li class="menu-price">
+          <p class="menu-text">Cream</p>
+          <p class="menu-text">150ml</p>
         </li>
-         <li class="menu-price">
-            <p class="menu-text">Cocoa powder</p>
-            <p class="menu-text">30g</p>
+        <li class="menu-price">
+          <p class="menu-text">Cocoa powder</p>
+          <p class="menu-text">30g</p>
         </li>
-         <li class="menu-price">
-            <p class="menu-text">Sugar</p>
-            <p class="menu-text">40g</p>
+        <li class="menu-price">
+          <p class="menu-text">Sugar</p>
+          <p class="menu-text">40g</p>
         </li>
-         <li class="menu-price">
-            <p class="menu-text">Vanilla sugar</p>
-            <p class="menu-text">10g</p>
+        <li class="menu-price">
+          <p class="menu-text">Vanilla sugar</p>
+          <p class="menu-text">10g</p>
         </li>
-        </ul>
-    </div> 
+      </ul>
+    </div>
     <form class="consist-form">
       <div class="consist-list">
         <div class="consist-item">
@@ -89,15 +83,11 @@
         </div>
         <div class="consist-item">
           <label for="textarea"></label>
-          <textarea
-            name="coment"
-            id="textarea"
-            rows="2"
-            placeholder="Comment"
-          ></textarea>
+          <textarea name="coment" id="textarea" rows="2" placeholder="Comment"></textarea>
         </div>
       </div>
       <button class="consist-btn" type="submit">Submit</button>
     </form>
   </div>
+
 </div>

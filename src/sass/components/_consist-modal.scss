@@ -20,23 +20,19 @@
 
 .consist-modal {
   position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   padding: 18px 26px;
 
-  max-width: 280px;
   width: 100%;
-  max-height: 968px;
   height: 100%;
 
   background: #FCFCFC;
-  border: 2px solid  #F8D24E;
+  border: 2px solid #F8D24E;
   border-radius: 10px;
   overflow: hidden;
+
   @media screen and (min-width: 768px) {
     padding: 30px 38px;
     max-width: 568px;
@@ -53,121 +49,123 @@
   background-color: #FCFCFC;
   fill: currentColor;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
   @media screen and (min-width: 768px) {
-  width: 24px;
-  height: 24px; 
+    width: 24px;
+    height: 24px;
   }
 }
 
 .consist-title {
-font-family: 'Seymour One';
-font-size: 20px;
- line-height: 1.4; 
-display: flex;
-align-items: center;
-text-align: center;
-color: #131313;
- margin-bottom: 20px;
- max-width: 322px;}
-
-
- 
-
-
+  font-family: 'Seymour One';
+  font-size: 20px;
+  line-height: 1.4;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #131313;
+  margin-bottom: 20px;
+  max-width: 322px;
+}
 
 .img-elipse {
   position: relative;
- gap: 7px;
-margin-bottom: 22px;}
+  gap: 7px;
+  margin-bottom: 22px;
+}
+
 .consist-img {
   width: 132px;
   height: 132px;
-  position: absolute;
-  top: 184;
+  position: relative;
+  top: -7px;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translateX(-50%);
   border-radius: 50%;
-
 }
+
 .wrap-list {
   width: 53px;
   height: 72px;
 }
+
 .consist-wrap-list {
-display: flex;
-gap: 9px;
-justify-content: baseline;
+  display: flex;
+  gap: 9px;
+  justify-content: baseline;
 }
 
 .wrap-text {
-font-family: 'Montserrat';
-font-weight: 500;
-font-size: 12px;
-line-height: 2.8;
-display: flex;
-align-items: center;
-text-align: center;
-color: #131313;
-border: 2px solid #9CBE8F;
-background-color: #9CBE8F;
-border-radius: 50%;
-width: 43px;
-height: 43px;
-position: relative;
+  font-family: 'Montserrat';
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 2.8;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #131313;
+  border: 2px solid #9CBE8F;
+  background-color: #9CBE8F;
+  border-radius: 50%;
+  width: 43px;
+  height: 43px;
+  position: relative;
 }
+
 .wrap-text-item {
-font-family: 'Montserrat';
-font-size: 12px;
-line-height: 1.2px;
-display: flex;
-align-items: center;
-text-align: center;
-color: #131313;
-width: 53px;
-height: 72px;
-border: 2px solid #9CBE8F;
-border-radius: 40px;
-position: absolute;
+  font-family: 'Montserrat';
+  font-size: 12px;
+  line-height: 1.2px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #131313;
+  width: 53px;
+  height: 72px;
+  border: 2px solid #9CBE8F;
+  border-radius: 40px;
+  position: absolute;
 }
 
 
 
 
 
-.consist-menu{
-font-family: 'Montserrat';
-font-weight: 500;
-font-size: 20px;
-line-height: 28px;
-display: flex;
-align-items: center;
-text-align: center;
-color: #131313;
-margin-bottom: 24px;
+.consist-menu {
+  font-family: 'Montserrat';
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 28px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #131313;
+  margin-bottom: 24px;
 }
+
 .consist-menu-item {
-display: flex;
-justify-content: space-between;
-margin-bottom: 40px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
 }
 
 .menu-price {
-display: flex;
+  display: flex;
   justify-content: space-between;
   gap: 55px;
   align-items: baseline;
-//   margin-top: 11px;
+  //   margin-top: 11px;
 }
 
 .menu-text {
-font-family: 'Montserrat';
-font-size: 14px;
-line-height: 1.79;
-display: flex;
-align-items: center;
-text-align: center;
-letter-spacing: 0.04em;
-color: #131313;
+  font-family: 'Montserrat';
+  font-size: 14px;
+  line-height: 1.79;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: #131313;
 }
 
 .consist-form {
@@ -231,7 +229,7 @@ textarea {
   font-weight: 600;
   font-size: 12px;
   line-height: 1.25;
-  background:  #F8D24E;
+  background: #F8D24E;
   border-radius: 10px;
 
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
