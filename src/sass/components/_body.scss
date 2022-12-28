@@ -1,11 +1,17 @@
 body {
-    padding-top: 8px;
+    padding-top: 49px;
 
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     font-size: 14px;
     color: $color-black;
     background-color: $color-green-bg;
+    @media screen and (min-width: 768px) {
+        padding-top: 66px;
+    }
+    @media screen and (min-width: 768px) {
+        padding-top: 0px;
+    }
 }
 
 .no-scroll {

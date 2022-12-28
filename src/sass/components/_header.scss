@@ -1,11 +1,21 @@
 .header {
-    height: 49px;
+    position: fixed;
+    z-index: 900;
+    left: 0;
+    top: 0;
+    padding-top: 12px;
+    width: 100%;
+    background-color: $color-green-bg;
+
+    height: 56px;
 
     @media screen and (min-width: 768px) {
-        height: 66px;
+        height: 72px;
+        padding-top: 20px;
     }
 
     @media screen and (min-width: 1200px) {
+        position: static;
         height: 73px;
     }
 }
@@ -29,6 +39,7 @@
 }
 
 .logo {
+    height: 37px;
     width: 40px;
 
     @media screen and (min-width: 768px) {
@@ -48,6 +59,9 @@
 }
 
 .drop-menu__button {
+    width: 32px;
+    height: 32px;
+
     display: flex;
     align-items: center;
     justify-content: center;
