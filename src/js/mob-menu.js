@@ -1,27 +1,14 @@
 (() => {
-    const openDropMenu = document.querySelector('.js-menu-container');
-    const openMenuBtn = document.querySelector('.js-open-menu');
-
-    const toggleMenu = () => {
-        const isMenuOpen =
-            openMenuBtn.getAttribute('aria-expanded') === 'true' || false;
-        openMenuBtn.setAttribute('aria-expanded', !isMenuOpen);
-        openDropMenu.classList.toggle('is-open');
-  
-        const scrollLockMethod = !isMenuOpen
-            ? 'disableBodyScroll'
-            : 'enableBodyScroll';
-        bodyScrollLock[scrollLockMethod](document.body);
+    const refs = {
+        openMenuBtn: document.querySelector("[data-menu-open]"),
+        menu: document.querySelector("[data-menu]"),
+        body: document.querySelector("body"),
     };
 
-    openMenuBtn.addEventListener('click', toggleMenu);
-    closeMenuBtn.addEventListener('click', toggleMenu);
+    refs.openmenuBtn.addEventListener("click", toggleModal);
 
-    // Close the mobile menu on wider screens if the device orientation changes
-    window.matchMedia('(min-width: 768px)').addEventListener('change', e => {
-        if (!e.matches) return;
-        openDropMenu.classList.remove('is-open');
-        openMenuBtn.setAttribute('aria-expanded', false);
-        bodyScrollLock.enableBodyScroll(document.body);
-    });
+    function toggleModal() {
+        refs.menu.classList.toggle("is-hidden");
+        refs.body.classList.toggle("no-scroll");
+    }
 })();
