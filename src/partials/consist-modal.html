@@ -1,6 +1,6 @@
-<div class="backdrop is-hidden">
+<div class="backdrop is-hidden" data-consist-modal data-consist-modal-2 data-consist-modal-1 >
   <div class="consist-modal">
-    <button class="consist-close" type="button" data-modal-close>
+    <button class="consist-close" type="button" data-consist-modal-close>
       <svg width="20" height="20">
         <use href="./images/svg/icons.svg#icon-close"></use>
       </svg>
@@ -8,8 +8,9 @@
     <p class="consist-title">
       Chololate icecream
     </p>
-    <div class="img-elipse">
-      <picture class="consist-img">
+    <div class="consist-modal__imgs">
+      <div class="consist-modal__elips"></div>
+      <picture>
         <source srcset="./images/consist/chololate_icecream_1x.webp 1x, ./images/consist/chololate_icecream_2x.webp 2x"
           type="image/webp" media="(min-width: 768px)">
         <source srcset="./images/consist/chololate_icecream_1x.jpg 1x, ./images/consist/chololate_icecream_2x.jpg 2x"
@@ -19,24 +20,32 @@
       </picture>
     </div>
     <div class="consist-wrap">
-      <!-- <ul class="consist-wrap-list">
-        <li class="wrap-list">
-         <p class="wrap-text">320</p>
-          <p class="wrap-text-item">kcal</p>
+      <ul class="consist-wrap-list">
+        <li class="wrap-item">
+          <div class="wrap-item__elips">
+            <p class="wrap-item__text-elips">320</p>
+          </div>
+          <p class="wrap-item__text">kcal</p>
         </li>
-        <li class="wrap-list">
-            <p class="wrap-text">4g</p>
-             <p class="wrap-text-item">Prote</p>
+        <li class="wrap-item">
+          <div class="wrap-item__elips">
+            <p class="wrap-item__text-elips">4g</p>
+          </div>
+          <p class="wrap-item__text">Prote...</p>
         </li>
-        <li class="wrap-list">
-           <p class="wrap-text">8,2g</p>
-            <p class="wrap-text-item">Fats</p>
+        <li class="wrap-item">
+          <div class="wrap-item__elips">
+            <p class="wrap-item__text-elips">8,2g </p>
+          </div>
+          <p class="wrap-item__text">Fats</p>
         </li>
-        <li class="wrap-list">
-             <p class="wrap-text">40,4g</p>
-              <p class="wrap-text-item">Carbs</p>
+        <li class="wrap-item">
+          <div class="wrap-item__elips">
+            <p class="wrap-item__text-elips">40,4g </p>
+          </div>
+          <p class="wrap-item__text">Carbs</p>
         </li>
-        </ul> -->
+      </ul>
     </div>
     <p class="consist-menu">Ingredients</p>
     <div class="consist-menu-item">
