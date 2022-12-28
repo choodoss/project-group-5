@@ -114,9 +114,10 @@
     }
 
     @media screen and (min-width: 1200px) {
+        max-width: 1200;
         gap: 32px;
         top: -128px;
-        padding: 0 20px;
+        padding: 0 14px;
     }
 }
 
