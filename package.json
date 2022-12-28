@@ -2,10 +2,10 @@
   "name": "parcel-project-template",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://choodoss.github.io/project-group-5.git",
+  "homepage": "https://choodoss.github.io/project-group-5",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /project-group-5.git/"
+    "build": "parcel build src/*.html --public-url /project-group-5/"
   },
   "repository": {
     "type": "git",

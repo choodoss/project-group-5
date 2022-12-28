@@ -81,11 +81,13 @@
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     &:hover {
+        outline: none;
         border: 2px solid $hover-focus-color;
         outline: none;
     }
 
     &:focus {
+        outline: none;
         color: $color-white-bg;
         border: 2px solid $hover-focus-color;
         outline: none;
@@ -105,9 +107,13 @@
     color: #F8D24E;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-    &:hover,
+    &:hover {
+        color: $hover-focus-color;
+        outline: none;
+    }
     &:focus {
         color: $color-white-bg;
+        outline: none;
     }
 }
 
@@ -132,6 +138,7 @@
     z-index: 1;
     width: 152px;
     height: 152px;
+    border-radius: 50%;
 
     @media screen and (min-width: 1200px) {
         width: 225px;
