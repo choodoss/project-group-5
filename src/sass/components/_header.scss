@@ -242,11 +242,12 @@
     margin: 0 auto;
 
     @media screen and (max-width: 767px) {
-        display: none;
+        display: flex;
     }
 }
 
 .header-nav__button {
+
     @media screen and (min-width: 768px) {
         display: flex;
     }
