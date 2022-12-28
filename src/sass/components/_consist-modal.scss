@@ -1,0 +1,243 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 100;
+  overflow: auto;
+  transform: scaleX(1);
+
+  &.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+    transform: scaleX(0);
+  }
+
+}
+
+.consist-modal {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 18px 26px;
+
+  max-width: 280px;
+  width: 100%;
+  max-height: 968px;
+  height: 100%;
+
+  background: #FCFCFC;
+  border: 2px solid  #F8D24E;
+  border-radius: 10px;
+  overflow: hidden;
+  @media screen and (min-width: 768px) {
+    padding: 30px 38px;
+    max-width: 568px;
+    max-height: 996x;
+  }
+}
+
+.consist-close {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 20px;
+  height: 20px;
+  background-color: #FCFCFC;
+  fill: currentColor;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  @media screen and (min-width: 768px) {
+  width: 24px;
+  height: 24px; 
+  }
+}
+
+.consist-title {
+font-family: 'Seymour One';
+font-size: 20px;
+ line-height: 1.4; 
+display: flex;
+align-items: center;
+text-align: center;
+color: #131313;
+ margin-bottom: 20px;
+ max-width: 322px;}
+
+
+ 
+
+
+
+.img-elipse {
+  position: relative;
+ gap: 7px;
+margin-bottom: 22px;}
+.consist-img {
+  width: 132px;
+  height: 132px;
+  position: absolute;
+  top: 184;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+
+}
+.wrap-list {
+  width: 53px;
+  height: 72px;
+}
+.consist-wrap-list {
+display: flex;
+gap: 9px;
+justify-content: baseline;
+}
+
+.wrap-text {
+font-family: 'Montserrat';
+font-weight: 500;
+font-size: 12px;
+line-height: 2.8;
+display: flex;
+align-items: center;
+text-align: center;
+color: #131313;
+border: 2px solid #9CBE8F;
+background-color: #9CBE8F;
+border-radius: 50%;
+width: 43px;
+height: 43px;
+position: relative;
+}
+.wrap-text-item {
+font-family: 'Montserrat';
+font-size: 12px;
+line-height: 1.2px;
+display: flex;
+align-items: center;
+text-align: center;
+color: #131313;
+width: 53px;
+height: 72px;
+border: 2px solid #9CBE8F;
+border-radius: 40px;
+position: absolute;
+}
+
+
+
+
+
+.consist-menu{
+font-family: 'Montserrat';
+font-weight: 500;
+font-size: 20px;
+line-height: 28px;
+display: flex;
+align-items: center;
+text-align: center;
+color: #131313;
+margin-bottom: 24px;
+}
+.consist-menu-item {
+display: flex;
+justify-content: space-between;
+margin-bottom: 40px;
+}
+
+.menu-price {
+display: flex;
+  justify-content: space-between;
+  gap: 55px;
+  align-items: baseline;
+//   margin-top: 11px;
+}
+
+.menu-text {
+font-family: 'Montserrat';
+font-size: 14px;
+line-height: 1.79;
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.04em;
+color: #131313;
+}
+
+.consist-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 368px;
+  width: 100%;
+}
+
+.consist-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  margin-bottom: 24px;
+
+  @media screen and (min-width: 768px) {
+    gap: 16px;
+    margin-bottom: 32px;
+  }
+}
+
+.consist-item {
+  width: 100%;
+}
+
+.consist-modal input,
+textarea {
+  width: 100%;
+  height: 32px;
+  padding-left: 12px;
+  font-size: 12px;
+  line-height: 1.42;
+  background: rgba(248, 210, 78, 0.1);
+  border: 1px solid $color-green-bg;
+  border-radius: 10px;
+
+  &::placeholder {
+    padding-top: 8px;
+    color: $color-black;
+  }
+
+  @media screen and (min-width: 768px) {
+    height: 42px;
+    width: 368px;
+  }
+}
+
+.consist-modal textarea {
+  height: 64px;
+
+  @media screen and (min-width: 768px) {
+    height: 84px;
+  }
+}
+
+.consist-btn {
+  padding: 12px 34px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.25;
+  background:  #F8D24E;
+  border-radius: 10px;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: 1.21;
+  }
+}

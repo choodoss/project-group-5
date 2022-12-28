@@ -1,3 +1,103 @@
-<div class="consist-modal is-hidden" data-consist-modal-open>
-    
+<div class="backdrop is-hidde">
+  <div class="consist-modal">
+    <button
+      class="consist-close"
+      type="button" data-modal-close>
+      <svg width="20" height="20">
+        <use href="./images/svg/icons.svg#icon-close"></use>
+      </svg>
+    </button>
+    <p class="consist-title">
+    Chololate icecream
+    </p>
+    <div class="img-elipse">
+        <picture class="consist-img">
+            <source
+            srcset="./images/ingredients/choco-ice.png 1x,
+            ./images/ingredients/choco-ice2x.png 2x,
+            ./images/ingredients/choco-ice.webp 1x,
+            ./images/ingredients/choco-ice2x.webp 2x"
+                media="(min-width:132px)"
+            />
+             <img src="./images/ingredients/choco-ice.png" 
+             alt="choco-ice"
+             width="132"> 
+        </picture> 
+    </div>
+    <!-- <div class="consist-wrap">
+        <ul class="consist-wrap-list">
+        <li class="wrap-list">
+         <p class="wrap-text">320</p>
+          <p class="wrap-text-item">kcal</p>
+        </li>
+        <li class="wrap-list">
+            <p class="wrap-text">4g</p>
+             <p class="wrap-text-item">Prote</p>
+        </li>
+        <li class="wrap-list">
+           <p class="wrap-text">8,2g</p>
+            <p class="wrap-text-item">Fats</p>
+        </li>
+        <li class="wrap-list">
+             <p class="wrap-text">40,4g</p>
+              <p class="wrap-text-item">Carbs</p>
+        </li>
+        </ul> -->
+    </div>
+    <p class="consist-menu">Ingredients</p>
+   <div class="consist-menu-item">
+        <ul class="consist-menu-list">
+        <li class="menu-price">
+            <p class="menu-text">Milk</p>
+            <p class="menu-text">100ml</p>
+        </li>
+         <li class="menu-price">
+            <p class="menu-text">Belgian chocolate</p>
+            <p class="menu-text">20g</p>
+        </li>
+         <li class="menu-price">
+            <p class="menu-text">Cream</p>
+            <p class="menu-text">150ml</p>
+        </li>
+         <li class="menu-price">
+            <p class="menu-text">Cocoa powder</p>
+            <p class="menu-text">30g</p>
+        </li>
+         <li class="menu-price">
+            <p class="menu-text">Sugar</p>
+            <p class="menu-text">40g</p>
+        </li>
+         <li class="menu-price">
+            <p class="menu-text">Vanilla sugar</p>
+            <p class="menu-text">10g</p>
+        </li>
+        </ul>
+    </div> 
+    <form class="consist-form">
+      <div class="consist-list">
+        <div class="consist-item">
+          <label for="name"></label>
+          <div class="consist-input">
+            <input type="text" name="name" id="name" placeholder="Name" />
+          </div>
+        </div>
+        <div class="consist-item">
+          <label for="tel"></label>
+          <div class="consist-input">
+            <input type="tel" name="tel" id="tel" placeholder="Phone" />
+          </div>
+        </div>
+        <div class="consist-item">
+          <label for="textarea"></label>
+          <textarea
+            name="coment"
+            id="textarea"
+            rows="2"
+            placeholder="Comment"
+          ></textarea>
+        </div>
+      </div>
+      <button class="consist-btn" type="submit">Submit</button>
+    </form>
+  </div>
 </div>
