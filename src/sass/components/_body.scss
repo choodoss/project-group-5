@@ -7,9 +7,9 @@ body {
     color: $color-black;
     background-color: $color-green-bg;
     @media screen and (min-width: 768px) {
-        padding-top: 66px;
+        padding-top: 92px;
     }
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 1200px) {
         padding-top: 0px;
     }
 }

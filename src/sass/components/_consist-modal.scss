@@ -21,6 +21,7 @@
 
 .consist-modal {
   position: relative;
+  overflow: auto;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -89,7 +90,7 @@
   border-radius: 50%;
 }
 
-.example__img {
+.example__img-1 {
   width: 132px;
   height: 132px;
   position: absolute;
@@ -196,7 +197,6 @@
 }
 
 .menu-text {
-  font-family: 'Montserrat';
   font-size: 14px;
   line-height: 1.79;
   display: flex;
