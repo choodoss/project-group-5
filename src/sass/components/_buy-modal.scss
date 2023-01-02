@@ -95,6 +95,47 @@
   }
 }
 
+.buy-modal__input {
+  position: relative;
+}
+
+.buy-modal__input input:hover,
+.buy-modal__input input:focus {
+  outline: solid 1px $color-green-bg;
+}
+
+.buy-modal__input input:not(:placeholder-shown):valid {
+  background-color: rgba(182, 226, 182, 0.3);
+}
+
+.buy-modal__input input:not(:placeholder-shown):invalid {
+  border: solid 1px red;
+  background-color: rgba(255, 0, 0, 0.1);
+}
+
+.buy-modal__input input:hover:not(:placeholder-shown):invalid,
+.buy-modal__input input:focus:not(:placeholder-shown):invalid {
+  outline: solid 1px red;
+}
+
+.form__error {
+  display: none;
+  .buy-modal__input input:not(:placeholder-shown):invalid + & {
+    position: absolute;
+    top: 32px;
+    left: 0;
+    display: block;
+    margin-top: 2px;
+    font-size: 8px;
+    color: red;
+    @media screen and (min-width: 768px) {
+      position: absolute;
+      top: 42px;
+      font-size: 11px;
+    }
+  }
+}
+
 .buy-modal__label--green {
   position: relative;
   display: flex;
@@ -314,10 +355,19 @@
 }
 
 .buy-modal textarea {
+  resize: none;
   height: 65px;
 
   @media screen and (min-width: 768px) {
     height: 84px;
+  }
+
+  &:not(:placeholder-shown) {
+    background-color: rgba(182, 226, 182, 0.3);
+  }
+  &:hover,
+  &:focus {
+    outline: solid 1px $color-green-bg;
   }
 }
 
