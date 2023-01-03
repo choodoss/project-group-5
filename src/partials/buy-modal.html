@@ -52,13 +52,33 @@
         <div class="buy-modal__input-item">
           <label for="name"></label>
           <div class="buy-modal__input">
-            <input type="text" name="name" id="name" placeholder="Name" />
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Name"
+              minlength="2"
+              title="Please enter your name"
+              required
+            />
+            <span class="form__error">Please enter your name</span>
           </div>
         </div>
         <div class="buy-modal__input-item">
           <label for="tel"></label>
           <div class="buy-modal__input">
-            <input type="tel" name="tel" id="tel" placeholder="Phone" />
+            <input
+              type="tel"
+              name="tel"
+              id="tel"
+              placeholder="Phone"
+              minlength="7"
+              title="Please enter your phone number (min 7 characters)"
+              required
+            />
+            <span class="form__error"
+              >Please enter your phone number (min 7 characters)</span
+            >
           </div>
         </div>
         <div class="buy-modal__input-item">
