@@ -19,33 +19,33 @@
           alt="choco-ice" width="132" height="132">
       </picture>
     </div>
-      <ul class="consist-wrap-list">
-        <li class="wrap-item">
-          <div class="wrap-item__elips">
-            <p class="wrap-item__text-elips">320</p>
-          </div>
-          <p class="wrap-item__text">kcal</p>
-        </li>
-        <li class="wrap-item">
-          <div class="wrap-item__elips">
-            <p class="wrap-item__text-elips">4g</p>
-          </div>
-          <p class="wrap-item__text">Prote...</p>
-        </li>
-        <li class="wrap-item">
-          <div class="wrap-item__elips">
-            <p class="wrap-item__text-elips">8,2g </p>
-          </div>
-          <p class="wrap-item__text">Fats</p>
-        </li>
-        <li class="wrap-item">
-          <div class="wrap-item__elips">
-            <p class="wrap-item__text-elips">40,4g </p>
-          </div>
-          <p class="wrap-item__text">Carbs</p>
-        </li>
-      </ul>
-      <div class="ingredients">
+    <ul class="consist-wrap-list">
+      <li class="wrap-item">
+        <div class="wrap-item__elips">
+          <p class="wrap-item__text-elips">320</p>
+        </div>
+        <p class="wrap-item__text">kcal</p>
+      </li>
+      <li class="wrap-item">
+        <div class="wrap-item__elips">
+          <p class="wrap-item__text-elips">4g</p>
+        </div>
+        <p class="wrap-item__text">Prote...</p>
+      </li>
+      <li class="wrap-item">
+        <div class="wrap-item__elips">
+          <p class="wrap-item__text-elips">8,2g </p>
+        </div>
+        <p class="wrap-item__text">Fats</p>
+      </li>
+      <li class="wrap-item">
+        <div class="wrap-item__elips">
+          <p class="wrap-item__text-elips">40,4g </p>
+        </div>
+        <p class="wrap-item__text">Carbs</p>
+      </li>
+    </ul>
+    <div class="ingredients">
       <p class="consist-menu">Ingredients</p>
       <ul class="consist-menu-list">
         <li class="menu-price">
@@ -77,16 +77,18 @@
     <form class="consist-form">
       <ul class="consist-list">
         <li class="consist-item">
-          <input class="consist-item__input" type="text" name="name" placeholder=" " />
-          <label class="consist-item__lable">Name</label>
+          <input class="consist-item__input" id="consist-item__name" type="text" name="consist-item__name"
+            placeholder=" " />
+          <label for="" class="consist-item__lable">Name</label>
         </li>
         <li class="consist-item">
-          <input class="consist-item__input" type="tel" name="tel" placeholder=" " />
-          <label class="consist-item__lable">Phone</label>
+          <input class="consist-item__input" id="consist-item__tel" type="tel" name="tel" placeholder=" " />
+          <label class="consist-item__lable" for="consist-item__tel">Phone</label>
         </li>
         <li class="consist-item">
-          <textarea class="consist-item__textarea" name="comment" rows="2" placeholder=" "></textarea>
-          <label class="consist-item__lable">Comment</label>
+          <textarea class="consist-item__textarea" id="consist-item__comment" name="comment" rows="2"
+            placeholder=" "></textarea>
+          <label class="consist-item__lable" for="consist-item__comment">Comment</label>
         </li>
       </ul>
       <button class="consist-btn" type="submit">Submit</button>
