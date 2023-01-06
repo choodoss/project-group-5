@@ -1,4 +1,4 @@
-<div class="backdrop is-hidden" data-consist-modal data-consist-modal-2 data-consist-modal-1>
+<div class="backdrop is-hidden" data-consist-modal>
   <div class="consist-modal">
     <button class="consist-close" type="button" data-consist-modal-close>
       <svg width="20" height="20">
@@ -19,7 +19,6 @@
           alt="choco-ice" width="132" height="132">
       </picture>
     </div>
-    <div class="consist-wrap">
       <ul class="consist-wrap-list">
         <li class="wrap-item">
           <div class="wrap-item__elips">
@@ -46,7 +45,7 @@
           <p class="wrap-item__text">Carbs</p>
         </li>
       </ul>
-
+      <div class="ingredients">
       <p class="consist-menu">Ingredients</p>
       <ul class="consist-menu-list">
         <li class="menu-price">
@@ -76,24 +75,20 @@
       </ul>
     </div>
     <form class="consist-form">
-      <div class="consist-list">
-        <div class="consist-item">
-          <label for="name"></label>
-          <div class="consist-input">
-            <input type="text" name="name" id="name" placeholder="Name" />
-          </div>
-        </div>
-        <div class="consist-item">
-          <label for="tel"></label>
-          <div class="consist-input">
-            <input type="tel" name="tel" id="tel" placeholder="Phone" />
-          </div>
-        </div>
-        <div class="consist-item">
-          <label for="textarea"></label>
-          <textarea name="coment" id="textarea" rows="2" placeholder="Comment"></textarea>
-        </div>
-      </div>
+      <ul class="consist-list">
+        <li class="consist-item">
+          <input class="consist-item__input" type="text" name="name" placeholder=" " />
+          <label class="consist-item__lable">Name</label>
+        </li>
+        <li class="consist-item">
+          <input class="consist-item__input" type="tel" name="tel" placeholder=" " />
+          <label class="consist-item__lable">Phone</label>
+        </li>
+        <li class="consist-item">
+          <textarea class="consist-item__textarea" name="comment" rows="2" placeholder=" "></textarea>
+          <label class="consist-item__lable">Comment</label>
+        </li>
+      </ul>
       <button class="consist-btn" type="submit">Submit</button>
     </form>
   </div>
