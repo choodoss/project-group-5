@@ -1,11 +1,6 @@
 .products {
   padding-top: 60px;
   padding-bottom: 60px;
-}
-
-.products__wrap {
-  width: 100%;
-  min-width: 280px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -70,7 +65,7 @@
   font-style: normal;
   font-weight: 400;
   font-size: 30px;
-  line-height: 1/27;
+  line-height: calc(38 / 30);
   text-align: center;
   letter-spacing: 0.04em;
   text-transform: uppercase;
