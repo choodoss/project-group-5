@@ -44,6 +44,7 @@
 }
 
 .gallery__container {
+  width: 100%;
   position: absolute;
   top: -32px;
   left: 50%;
@@ -51,30 +52,17 @@
   margin: 0 auto;
   border-radius: 18px;
 
-  @media screen and (min-width: 480px) {
-    width: 280px;
-    height: 130px;
-  }
-
   @media screen and (min-width: 768px) {
     top: -144px;
-    width: 704px;
-    height: 327px;
   }
 
   @media screen and (min-width: 1200px) {
     top: -98px;
-    width: 1013px;
-    height: 422px;
   }
 }
 
 .gallery-img {
   border-radius: 18px;
-}
-
-.slider-img ul li button {
-  display: none;
 }
 
 .reviews__thumb {
