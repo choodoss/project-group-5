@@ -44,7 +44,7 @@
   }
 }
 
-.gallery__container {
+.gallery-container {
   width: 100%;
   position: absolute;
   top: -32px;
@@ -52,18 +52,26 @@
   transform: translateX(-50%);
   margin: 0 auto;
   border-radius: 18px;
+  margin: 0 20px;
 
   @media screen and (min-width: 768px) {
     top: -144px;
+    margin: 0 32px;
   }
 
   @media screen and (min-width: 1200px) {
     top: -98px;
+    margin: 0 94px;
   }
 }
 
 .gallery-img {
   border-radius: 18px;
+  width: 90vw;
+}
+
+.slider-img ul li button {
+  display: none;
 }
 
 .reviews__thumb {

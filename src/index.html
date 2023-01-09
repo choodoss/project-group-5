@@ -10,7 +10,7 @@
     href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Seymour+One&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
-  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
   <link rel="stylesheet" href="./sass/index.scss">
   <link rel="icon" type="image/x-icon" href="./images/favicon/ice_crema.ico">
   <title>Ice cream</title>
@@ -49,13 +49,14 @@
 
     $(document).ready(function () {
       $('.slider-img').slick({
-        dots: true,
         infinite: true,
+        fade: true,
+        cssEase: 'linear',
         speed: 800,
-        slidesToShow: 1,
-        adaptiveHeight: true,
         autoplay: true,
         autoplaySpeed: 4000,
+        arrows: false,
+        centerMode: true
       });
     });
   </script>
