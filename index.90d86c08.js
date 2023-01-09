@@ -1,2 +1,0 @@
-!function(){var e={openFranchiseModalBtn:document.querySelector("[data-franchise-modal-open]"),closeFranchiseModalBtn:document.querySelector("[data-franchise-modal-close]"),franchiseModal:document.querySelector("[data-franchise-modal]"),body:document.querySelector("body")};function o(){e.franchiseModal.classList.toggle("is-hidden"),e.body.classList.toggle("no-scroll")}e.openFranchiseModalBtn.addEventListener("click",o),e.closeFranchiseModalBtn.addEventListener("click",o)}();
-//# sourceMappingURL=index.90d86c08.js.map

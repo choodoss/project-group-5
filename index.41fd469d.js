@@ -1,2 +1,0 @@
-!function(){var o={openConsistModalBtn:document.querySelector("[data-consist-modal-1-open]"),closeConsistModalBtn:document.querySelector("[data-consist-modal-1-close]"),consistModal:document.querySelector("[data-consist-1-modal]"),body:document.querySelector("body")};function t(){o.consistModal.classList.toggle("is-hidden"),o.body.classList.toggle("no-scroll")}o.openConsistModalBtn.addEventListener("click",t),o.closeConsistModalBtn.addEventListener("click",t)}();
-//# sourceMappingURL=index.41fd469d.js.map
