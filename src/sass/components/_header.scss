@@ -3,62 +3,69 @@
     z-index: 900;
     left: 0;
     top: 0;
-    padding-top: 12px;
-    width: 100vw;
-    background-color: $color-green-bg;
 
-    height: 56px;
+    width: 100%;
+    background-color: rgba(132, 161, 120, 0.7);
+    height: 64px;
 
     @media screen and (min-width: 768px) {
-        height: 72px;
-        padding-top: 20px;
+        height: 81px;
     }
 
     @media screen and (min-width: 1200px) {
-        position: static;
-        height: 73px;
+        height: 81px;
     }
+
 }
 
-.header-nav {
-    width: 100%;
-    height: 100%;
-
+.header-container--row {
     display: flex;
     align-items: center;
     justify-content: space-between;
 
-    @media screen and (min-width: 768px) {
-        justify-content: start;
-    }
+    height: 100%;
+
+    @media screen and (min-width: 768px) {}
 
     @media screen and (min-width: 1200px) {
-        position: static;
+        align-items: center;
         justify-content: space-between;
     }
 }
 
+.header-nav {}
+
 .logo {
-    height: 37px;
-    width: 40px;
+    z-index: 50;
+    margin-right: 0;
 
     @media screen and (min-width: 768px) {
         margin-right: auto;
-        width: 44px;
     }
 
     @media screen and (min-width: 1200px) {
         margin-right: 0;
-        width: 60px;
     }
 }
 
 .header-nav__img {
-    width: 100%;
-    overflow: hidden;
+    display: block;
+    width: 40px;
+    height: 37px;
+
+    @media screen and (min-width: 768px) {
+        width: 48px;
+        height: 44px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 60px;
+        height: 65px;
+    }
 }
 
 .drop-menu__button {
+    display: block;
     width: 32px;
     height: 32px;
 
@@ -113,16 +120,15 @@
 .drop-menu {
     z-index: 900;
     position: fixed;
-    top: 52px;
+    top: 64px;
     left: 0;
 
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
 
     padding: 0 20px;
     padding-top: 74px;
     padding-bottom: 64px;
-
 
     background-color: $color-green-bg;
     pointer-events: all;
@@ -131,13 +137,13 @@
     transform: translateX(0%);
     transition: transform 500ms cubic - bezier(0.4, 0, 0.2, 1);
 
-    &.is-hidden {
+    &.close-menu {
         transform: translateX(100%);
         pointer-events: none;
     }
 
     @media screen and (min-width: 768px) {
-        top: 66px;
+        top: 81px;
     }
 
     @media screen and (min-width:1200px) {

@@ -1,33 +1,23 @@
 <section class="reviews">
   <div class="container">
-    <div class="gallery-container slider-img">
+    <h2 class="is-hidden">Gallery</h2>
+    <div class="gallery-container autoplay-gallery">
       <div class="gallery-container__img">
         <picture>
-          <source srcset="
-                ./images/jpeg/reviews/gallery-desktop-img1.webp   1x,
-                ./images/jpeg/reviews/gallery-desktop-img1@2.webp 2x
-              " type="image/webp" media="(min-width:1200px)" />
           <source srcset="
                 ./images/jpeg/reviews/gallery-desktop-img1.jpg   1x,
                 ./images/jpeg/reviews/gallery-desktop-img1@2.jpg 2x
               " type="image/jpeg" media="(min-width:1200px)" />
-          <source srcset="
-                ./images/jpeg/reviews/gallery-tablet-img1.webp   1x,
-                ./images/jpeg/reviews/gallery-tablet-img1@2.webp 2x
-              " type="image/webp" media="(min-width:768px)" />
+
           <source srcset="
                 ./images/jpeg/reviews/gallery-tablet-img1.jpg   1x,
                 ./images/jpeg/reviews/gallery-tablet-img1@2.jpg 2x
               " type="image/jpeg" media="(min-width:768px)" />
           <source srcset="
-                ./images/jpeg/reviews/gallery-mobile-img1.webp   1x,
-                ./images/jpeg/reviews/gallery-mobile-img1@2.webp 2x
-              " type="image/webp" media="(max-width:767px)" />
-          <source srcset="
                 ./images/jpeg/reviews/gallery-mobile-img1.jpg   1x,
                 ./images/jpeg/reviews/gallery-mobile-img1@2.jpg 2x
               " type="image/jpeg" media="(max-width:767px)" />
-          <img class="gallery-img" src="./images/jpeg/reviews/gallery-tablet-img1.jpg" width="280"
+          <img class="gallery-img" src="./images/jpeg/reviews/gallery-tablet-img1.jpg" loading="lazy" width="1013"
             alt="Colorful ice cream with berries" />
         </picture>
       </div>
@@ -49,7 +39,7 @@
             media="(max-width:767px)" />
           <source srcset="./images/jpeg/reviews/gallery-mobile-img2.jpg 1x" type="image/jpeg"
             media="(max-width:767px)" />
-          <img class="gallery-img" src="./images/jpeg/reviews/gallery-tablet-img2.jpg" width="280"
+          <img class="gallery-img" src="./images/jpeg/reviews/gallery-tablet-img2.jpg" loading="lazy" width="1013"
             alt="Colorful ice cream with berries" />
         </picture>
       </div>
@@ -71,12 +61,14 @@
             media="(max-width:767px)" />
           <source srcset="./images/jpeg/reviews/gallery-mobile-img3.jpg 1x" type="image/jpeg"
             media="(max-width:767px)" />
-          <img class="gallery-img" src="./images/jpeg/reviews/gallery-tablet-img3.jpg" width="280"
+          <img class="gallery-img" src="./images/jpeg/reviews/gallery-tablet-img3.jpg" loading="lazy" width="1013"
             alt="Colorful ice cream with berries" />
         </picture>
       </div>
     </div>
-    <div class="controll__thumb slider">
+</section>
+
+<!-- <div class="controll__thumb slider">
       <div class="reviews__thumb">
         <picture>
           <source srcset="
@@ -146,5 +138,4 @@
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </div> -->

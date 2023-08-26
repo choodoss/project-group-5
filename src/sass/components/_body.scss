@@ -1,19 +1,49 @@
 body {
-    padding-top: 49px;
+    font-family: 'Montserrat', 'Roboto', sans-serif;
+    font-size: 16px;
+    letter-spacing: 0.04em;
+    line-height: 1.76;
+    background-repeat: repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-image: url(../images/bg/backgroud_mobile_1x.jpg);
+    background-image: url(../images/bg/backgroud_mobile_1x.webp);
+    cursor: url(../images/cursor.png), auto;
 
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
-    font-size: 14px;
-    color: $color-black;
-    background-color: $color-green-bg;
-    @media screen and (min-width: 768px) {
-        padding-top: 92px;
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        background-image: url(../images/bg/backgroud_mobile_2x.jpg);
+        background-image: url(../images/bg/backgroud_mobile_2x.webp);
     }
-    @media screen and (min-width: 1200px) {
-        padding-top: 0px;
+
+    @media screen and (min-width: 480px) {
+        background-image: url(../images/bg/backgroud_tablet_1x.jpg);
+        background-image: url(../images/bg/backgroud_tablet_1x.webp);
+
+
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: url(../images/bg/backgroud_tablet_2x.jpg);
+            background-image: url(../images/bg/backgroud_tablet_2x.webp);
+        }
+    }
+
+    @media screen and (min-width: 768px) {
+        background-image: url(../images/bg/backgroud_desktop_1x.jpg);
+        background-image: url(../images/bg/backgroud_desktop_1x.webp);
+
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: url(../images/bg/backgroud_desktop_2x.jpg);
+            background-image: url(../images/bg/backgroud_desktop_2x.webp);
+        }
     }
 }
 
+.no-scroll,
 .modal-open {
     overflow: hidden;
 }
