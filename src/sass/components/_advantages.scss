@@ -163,7 +163,7 @@
     cursor: pointer;
     color: #000000;
 
-    transition: background-color 250ms cubic - bezier(0.4, 0, 0.2, 1), color 250ms cubic - bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     border-color: transparent;
     outline: none;
 
@@ -250,10 +250,12 @@
 
 
     color: #fcfcfc;
+
     @media screen and (min-width: 360px) {
       padding-left: 35px;
       padding-right: 35px;
     }
+
     @media screen and (min-width: 420px) {
       padding-left: 50px;
       padding-right: 50px;

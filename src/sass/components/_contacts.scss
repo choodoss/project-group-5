@@ -1,48 +1,37 @@
 .contacts {
-    position: relative;
-    padding-top: 915px;
+
+    background-image: linear-gradient(#0000 25%, #84a178 25%);
     padding-bottom: 60px;
 
     @media screen and (min-width: 768px) {
+        background-image: linear-gradient(#0000 45%, #84a178 45%);
         padding-bottom: 40px;
-        padding-top: 238px;
     }
 
     @media screen and (min-width: 1200px) {
-        padding-top: 414px;
+        background-image: linear-gradient(#0000 16%, #84a178 16%);
         padding-bottom: 120px;
     }
 }
 
 .contacts__list {
-    position: absolute;
-    top: -353px;
-    left: 50%;
-    transform: translateX(-50%);
     display: flex;
     flex-direction: column;
-    width: 100%;
-    flex-wrap: nowrap;
     gap: 16px;
-    margin-bottom: 20px;
     margin: 0 20px;
-
+    margin-bottom: 20px;
 
     @media screen and (min-width: 768px) {
         padding: 0 32px;
         flex-direction: row;
         flex-wrap: wrap;
         gap: 16px;
-        top: -299px;
         margin: 0;
         margin-bottom: 40px;
-
     }
 
     @media screen and (min-width: 1200px) {
-        max-width: 1200;
         gap: 32px;
-        top: -128px;
         padding: 0 14px;
         margin-bottom: 60px;
     }
@@ -63,12 +52,6 @@
         width: calc((100% - 64px) / 3);
         gap: 32px;
     }
-}
-
-.contacts__container {
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
 }
 
 .contacts__representation-bg {
@@ -152,7 +135,6 @@
 }
 
 .contacts__location--adress {
-    font-style: normal;
     font-weight: 500;
     font-size: 12px;
     line-height: 1.83;
@@ -189,7 +171,6 @@
 }
 
 .contacts__days {
-    font-style: normal;
     font-weight: 500;
     font-size: 12px;
     line-height: 1.86;
@@ -204,7 +185,6 @@
 }
 
 .contacts__time {
-    font-style: normal;
     font-weight: 500;
     font-size: 12px;
     line-height: 1.86;
