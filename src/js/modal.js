@@ -14,8 +14,6 @@ document.addEventListener('DOMContentLoaded', function () {
         if (!modal || openModalBtns.length === 0 || closeModalBtns.length === 0) return;
         openModalBtns.forEach(openBtn => openBtn.addEventListener("click", toggleModal)); closeModalBtns.forEach(closeBtn => closeBtn.addEventListener("click", toggleModal));
 
-
-
         function toggleModal() {
             document.body.classList.toggle('modal-open');
             modal.classList.toggle('is-hidden');
