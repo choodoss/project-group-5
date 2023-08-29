@@ -1,53 +1,19 @@
 .local-modal {
-  width: 100%;
+  width: 280px;
   padding: 26px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 
-  @media screen and (min-width: 480px) {
-    width: 70%;
-  }
+  background: #FCFCFC;
+  border: 2px solid #F8D24E;
+  border-radius: 10px;
 
   @media screen and (min-width: 768px) {
     padding: 30px 58px;
     width: 568px;
   }
-
-  background: #FCFCFC;
-  border: 2px solid #F8D24E;
-  border-radius: 10px;
-  position: relative;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) scale(1);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-  .backdrop.is-hidden & {
-    transform: translate(-50%, -50%) scale(0);
-  }
-}
-
-.local-close {
-  background-color: #FCFCFC;
-  border: 0;
-  position: absolute;
-  right: 12px;
-  top: 12px;
-}
-
-.modal-close-icon {
-  width: 20px;
-  height: 20px;
-
-  @media screen and (min-width: 768px) {
-    width: 24px;
-    height: 24px;
-  }
-
-  color: #131313;
-  background-color: #FCFCFC;
 }
 
 .modal-title {

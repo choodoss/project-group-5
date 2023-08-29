@@ -1,5 +1,5 @@
 .read-more {
-  max-width: 340px;
+  width: 340px;
   padding: 26px;
 
   background-color: #FCFCFC;
@@ -7,7 +7,7 @@
   border-radius: 10px;
 
   @media screen and (min-width: 768px) {
-    max-width: 564px;
+    width: 564px;
     padding: 30px 58px;
   }
 }

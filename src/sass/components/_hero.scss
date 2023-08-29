@@ -9,6 +9,8 @@
     @media screen and (min-width: 1200px) {
         padding-top: 118px;
     }
+
+    overflow: hidden;
 }
 
 .hero__position {
@@ -141,10 +143,21 @@
     width: 152px;
     height: 152px;
     border-radius: 50%;
+    animation: animationRotate 1000ms linear forwards;
 
     @media screen and (min-width: 1200px) {
         width: 225px;
         height: 225px;
+    }
+}
+
+@keyframes animationRotate {
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(360deg);
     }
 }
 
@@ -267,6 +280,18 @@
 
     @media screen and (min-width: 1200px) {
         width: 456px;
+    }
+
+    animation: iceUpAnimation 1000ms linear forwards;
+}
+
+@keyframes iceUpAnimation {
+    0% {
+        transform: translateY(100%);
+    }
+
+    100% {
+        transform: translateY(0);
     }
 }
 

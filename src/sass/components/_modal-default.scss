@@ -11,17 +11,12 @@
   overflow-y: auto;
   overflow-x: hidden;
 
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &.is-hidden {
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
-
-    &.read-more-modal {
-      transform: scale(0);
-    }
   }
 }
 
@@ -40,8 +35,8 @@
   text-align: center;
   overflow-y: auto;
 
-  transform: translate(-50%);
-  transition: transform 1000ms cubic-bezier(0.4, 0, 0.2, 1);
+  transform: translate(-50%) scale(1);
+  transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
 
   @media screen and (min-width: 768px) {
     top: 50%;
@@ -49,7 +44,7 @@
   }
 }
 
-.backdrop.is-hidden .read-more-modal {
+.backdrop.is-hidden .modal {
   transform: translate(-50%, -50%) scale(0);
 }
 

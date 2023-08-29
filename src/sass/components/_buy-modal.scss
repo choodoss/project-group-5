@@ -1,70 +1,22 @@
-.buy-modal__container {
-  z-index: 901;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-
-  background: rgba(0, 0, 0, 0.2);
-
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  overflow: auto;
-  transform: scaleX(1);
-
-  &.is-hidden {
-    opacity: 0;
-    pointer-events: none;
-    transform: scaleX(0);
-  }
-}
-
 .buy-modal {
-  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  padding: 26px;
 
-  max-width: 280px;
-  width: 100%;
-  max-height: 991px;
-  height: 100%;
+  box-sizing: border-box;
+  padding: 26px;
+  width: 340px;
 
   background: $color-white-bg;
   border: 2px solid $color-yellow;
   border-radius: 10px;
 
-  overflow: hidden;
-  overflow-y: auto;
-
   @media screen and (min-width: 768px) {
     padding: 30px 52px;
-    max-width: 568px;
-    max-height: 644px;
+    width: 568px;
   }
 }
 
-.buy-modal__button--close {
-  position: absolute;
-  top: 12px;
-  right: 12px;
-  width: 20px;
-  height: 20px;
-  background-color: $color-white-bg;
-
-  fill: currentColor;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-  &:hover,
-  &:focus {
-    color: $color-yellow;
-  }
-}
 
 .buy-modal__title {
   margin-bottom: 20px;
@@ -92,47 +44,6 @@
     flex-direction: row;
     gap: 32px;
     margin-bottom: 40px;
-  }
-}
-
-.buy-modal__input {
-  position: relative;
-}
-
-.buy-modal__input input:hover,
-.buy-modal__input input:focus {
-  outline: solid 1px $color-green-bg;
-}
-
-.buy-modal__input input:not(:placeholder-shown):valid {
-  background-color: rgba(182, 226, 182, 0.3);
-}
-
-.buy-modal__input input:not(:placeholder-shown):invalid {
-  border: solid 1px red;
-  background-color: rgba(255, 0, 0, 0.1);
-}
-
-.buy-modal__input input:hover:not(:placeholder-shown):invalid,
-.buy-modal__input input:focus:not(:placeholder-shown):invalid {
-  outline: solid 1px red;
-}
-
-.form__error {
-  display: none;
-  .buy-modal__input input:not(:placeholder-shown):invalid + & {
-    position: absolute;
-    top: 32px;
-    left: 0;
-    display: block;
-    margin-top: 2px;
-    font-size: 8px;
-    color: red;
-    @media screen and (min-width: 768px) {
-      position: absolute;
-      top: 42px;
-      font-size: 11px;
-    }
   }
 }
 
@@ -175,11 +86,9 @@
   width: 132px;
   height: 132px;
   border-radius: 50%;
-  background: linear-gradient(
-      0deg,
+  background: linear-gradient(0deg,
       rgba(156, 190, 143, 0.7),
-      rgba(156, 190, 143, 0.7)
-    ),
+      rgba(156, 190, 143, 0.7)),
     #d9d9d9;
   box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
 }
@@ -206,11 +115,9 @@
   width: 132px;
   height: 132px;
   border-radius: 50%;
-  background: linear-gradient(
-      0deg,
+  background: linear-gradient(0deg,
       rgba(248, 210, 78, 0.7),
-      rgba(248, 210, 78, 0.7)
-    ),
+      rgba(248, 210, 78, 0.7)),
     #d9d9d9;
   box-shadow: 0px 5.26027px 19.726px rgba(153, 114, 23, 0.25);
 }
@@ -222,11 +129,9 @@
   width: 132px;
   height: 132px;
   border-radius: 50%;
-  background: linear-gradient(
-      0deg,
+  background: linear-gradient(0deg,
       rgba(213, 117, 63, 0.7),
-      rgba(213, 117, 63, 0.7)
-    ),
+      rgba(213, 117, 63, 0.7)),
     #d9d9d9;
   box-shadow: 0px 5.26027px 19.726px rgba(0, 0, 0, 0.25);
 }
@@ -246,10 +151,10 @@
 
   border: 2px solid #96af8c;
   border-radius: 15px;
-  transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-  .buy-modal__label--green input:checked + & {
-    background: #96af8c;
+  .buy-modal__label--green input:checked+& {
+    background-color: #96af8c;
     box-shadow: 0px 5.26027px 19.726px rgba(212, 20, 67, 0.1);
   }
 }
@@ -269,10 +174,10 @@
 
   border: 2px solid #efd478;
   border-radius: 15px;
-  transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-  .buy-modal__label--yellow input:checked + & {
-    background: #efd478;
+  .buy-modal__label--yellow input:checked+& {
+    background-color: #efd478;
     box-shadow: 0px 5.26027px 19.726px rgba(212, 20, 67, 0.1);
   }
 }
@@ -292,10 +197,10 @@
 
   border: 2px solid #d6936d;
   border-radius: 15px;
-  transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-  .buy-modal__label--brown input:checked + & {
-    background: #d6936d;
+  .buy-modal__label--brown input:checked+& {
+    background-color: #d6936d;
     box-shadow: 0px 5.26027px 19.726px rgba(212, 20, 67, 0.1);
   }
 }
@@ -308,10 +213,11 @@
   width: 100%;
 }
 
-.buy-modal__input-list {
+.buy-modal__list {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   gap: 12px;
   width: 100%;
   margin-bottom: 24px;
@@ -322,52 +228,88 @@
   }
 }
 
-.buy-modal__input-item {
+.buy-modal__item {
+  position: relative;
   width: 100%;
 }
 
-.buy-modal__form input,
-.buy-modal__form textarea {
+.buy-modal__lable {
+  position: absolute;
+  top: 50%;
+  left: 17px;
+  font-size: 11px;
+  line-height: 1.4;
+  color: $color-black;
+  transform: translateY(-50%) scale(1.25);
+
+  transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &.textarea {
+    transform: translateY(-250%) scale(1.25);
+  }
+}
+
+.buy-modal__input {
   width: 100%;
   height: 32px;
-  padding-left: 12px;
-
+  padding: 11px 16px;
   font-size: 12px;
-  line-height: 1.42;
+  line-height: 1.4;
+
   background: rgba(248, 210, 78, 0.1);
   border: 1px solid $color-green-bg;
   border-radius: 10px;
-
-  &::placeholder {
-    // padding-top: 8px;
-    color: $color-black;
-  }
+  inset: -5px 0px 0px;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   @media screen and (min-width: 768px) {
     height: 42px;
     width: 368px;
-    font-size: 14px;
+  }
 
-    &::placeholder {
-      font-size: 14px;
-    }
+  &:hover~.buy-modal__lable,
+  &:focus~.buy-modal__lable,
+  &:not(:placeholder-shown)~.buy-modal__lable {
+
+    transform: translateY(-180%) scale(1);
+    background-image: linear-gradient(to bottom,
+        #fff 50%, #fefbed 50%, #fefbed 100%);
+    padding: 0 3px;
+  }
+
+  &:hover,
+  &:focus {
+    border: 2px solid $color-yellow;
+    outline: none;
   }
 }
 
-.buy-modal textarea {
-  resize: none;
-  height: 65px;
 
-  @media screen and (min-width: 768px) {
-    height: 84px;
-  }
 
-  &:not(:placeholder-shown) {
-    background-color: rgba(182, 226, 182, 0.3);
-  }
+
+.buy-textarea {
+  padding: 11px 16px;
+  width: 100%;
+  font-size: 12px;
+  line-height: 1.4;
+  background: rgba(248, 210, 78, 0.1);
+  border: 1px solid $color-green-bg;
+  border-radius: 10px;
+
   &:hover,
   &:focus {
-    outline: solid 1px $color-green-bg;
+    border: 2px solid $color-yellow;
+    outline: none;
+  }
+
+  &:hover~.buy-modal__lable,
+  &:focus~.buy-modal__lable,
+  &:not(:placeholder-shown)~.buy-modal__lable {
+
+    transform: translateY(-370%) scale(1);
+    background-image: linear-gradient(to bottom,
+        #fff 50%, #fefbed 50%, #fefbed 100%);
+    padding: 0 3px;
   }
 }
 
