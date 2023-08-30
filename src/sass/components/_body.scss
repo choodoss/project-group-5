@@ -43,7 +43,7 @@ body {
     }
 }
 
-.no-scroll,
-.modal-open {
+body.no-scroll,
+body.modal-open {
     overflow: hidden;
 }

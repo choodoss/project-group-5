@@ -42,3 +42,23 @@ img {
     max-width: 100%;
     height: auto;
 }
+
+
+::-webkit-scrollbar {
+    width: 20px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: inherit;
+    border-left: 1px solid #84a178b3;
+}
+
+::-webkit-scrollbar-thumb {
+    width: 18px;
+    background-color: #84a178b3;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #84A178;
+    ;
+}

@@ -113,7 +113,6 @@
   &:hover~.franchise-modal__lable,
   &:focus~.franchise-modal__lable,
   &:not(:placeholder-shown)~.franchise-modal__lable {
-
     transform: translateY(-180%) scale(1);
     background-image: linear-gradient(to bottom,
         #fff 50%, #fefbed 50%, #fefbed 100%);
@@ -126,9 +125,6 @@
     outline: none;
   }
 }
-
-
-
 
 .franchise-textarea {
   padding: 11px 16px;
